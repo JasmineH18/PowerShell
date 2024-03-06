@@ -6,7 +6,7 @@ Resources Used:
 Environments Used:
 -Windows 10 in Virtualbox
 
-Opened Windows 10 virtual machine through VirtualBox. Start > Typed 'PowerShell' > Run as Administrator > Clicked 'Yes' . Screenshots https://imgur.com/v4IAbob, https://imgur.com/Y0ZPTf4
+Opened Windows 10 virtual machine through VirtualBox. Start > Typed 'PowerShell' > Run as Administrator > Clicked 'Yes' . Screenshots https://imgur.com/v4IAbob, https://imgur.com/Y0ZPTf4, https://imgur.com/iFcXNP9
 
 The version of my PowerShell.
 
@@ -17,28 +17,20 @@ It shows I'm on PowerShell version 5.
 Screenshot: https://imgur.com/CKHRWqp
 
 
-Using 'ping' will verify if a host destination is reachable and how many packets received or lost.
+Setting up Execution Policy to run scripts
 
+To see your current Execution Policy.
 In the terminal:
-ping scanme.nmap.org
+Get-ExecutionPolicy
 
-Screenshot: https://imgur.com/XmKsh7I
+My show 'Unrestricted' and it is a default execution policy for non-Windows computers and cannot be changed. Unsigned scripts can be run but, you have to make sure it's from a trusted source.
 
-
-'cd' is short for change directory. This command lets you change current working directories.
-
-In the terminal:
-cd ..
-
-Screenshot: https://imgur.com/Kh0QXS3
+Screenshot: https://imgur.com/vyDyMcF
 
 
-'pwd' is short for print working directory. This command lets you see which current directory you are in.
 
-In the terminal:
-pwd
 
-Screenshot: https://imgur.com/DfgjTnG
+
 
 
 
