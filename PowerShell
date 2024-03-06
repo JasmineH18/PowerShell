@@ -20,19 +20,21 @@ Screenshot: https://imgur.com/CKHRWqp
 Checking and setting up Execution Policy to run scripts
 
 To see your current Execution Policy.
+
 In the terminal:
 Get-ExecutionPolicy
 
 Output: 
 Unrestricted
 
-My show 'Unrestricted' and is a default execution policy for non-Windows computers and cannot be changed. Unsigned scripts can be run but, you have to make sure it's from a trusted source.
+My ExecutionPolicy show 'Unrestricted' and is a default execution policy for non-Windows computers and cannot be changed. Unsigned scripts can be run but, you have to make sure it's from a trusted source.
 
 Screenshot: https://imgur.com/vyDyMcF
 
-To set your Execution Policy. I'm goint to set it to RemoteSigned. Remotesigned is a default execution policy for Windows server computers. You can run scripts. 
+To set your Execution Policy. I'm going to set it to RemoteSigned. Remotesigned is a default execution policy for Windows server computers. You can run scripts. 
 
 To set your Execution Policy.
+
 In the terminal:
 Set-ExecutionPolicy RemoteSigned
 Typed 'Y' and pressed Enter
@@ -44,8 +46,30 @@ RemoteSigned
 Screenshot: https://imgur.com/9dB7lWc
 
 
+PowerShell ISE: ISE is short for Intergrated Scripting Environment. It's a host application editor for Windows PowerShell and you can run scripts. Also run commands.
+
+Created a folder named PowerShell Scripts. Screenshot https://imgur.com/jVxUhv6
+In Start, typed and selected 'PowerShell ISE'. Screenshot https://imgur.com/S9SBs1H
+Clicked the paper Icon at the type right to start a new script. Screenshot https://imgur.com/ScfhnBa
+
+Writing a script using the Write-Host cmdlet
+
+Write-Host: This cmdlet will output the text to the console. 
+
+In the editor:
+Write-Host "Where's Waldo"
+
+Clicked the green play button to run the script.
+
+Output: 
+Where's Waldo
+
+Screenshot: https://imgur.com/14TPE4Z
 
 
+To save a script. File > Save as > Selected the 'Powershell Scripts' folder > Save > Viewed 'Powershell Scripts' folder
+
+Screenshots: https://imgur.com/n5DNY7H, https://imgur.com/rfrJwD6, https://imgur.com/uGoOBiK
 
 
-
+ 
