@@ -17,19 +17,31 @@ It shows I'm on PowerShell version 5.
 Screenshot: https://imgur.com/CKHRWqp
 
 
-Setting up Execution Policy to run scripts
+Checking and setting up Execution Policy to run scripts
 
 To see your current Execution Policy.
 In the terminal:
 Get-ExecutionPolicy
 
-My show 'Unrestricted' and it is a default execution policy for non-Windows computers and cannot be changed. Unsigned scripts can be run but, you have to make sure it's from a trusted source.
+Output: 
+Unrestricted
+
+My show 'Unrestricted' and is a default execution policy for non-Windows computers and cannot be changed. Unsigned scripts can be run but, you have to make sure it's from a trusted source.
 
 Screenshot: https://imgur.com/vyDyMcF
 
+To set your Execution Policy. I'm goint to set it to RemoteSigned. Remotesigned is a default execution policy for Windows server computers. You can run scripts. 
 
+To set your Execution Policy.
+In the terminal:
+Set-ExecutionPolicy RemoteSigned
+Typed 'Y' and pressed Enter
+Get-ExecutionPolicy
 
+Output: 
+RemoteSigned
 
+Screenshot: https://imgur.com/9dB7lWc
 
 
 
