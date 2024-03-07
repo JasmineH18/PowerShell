@@ -72,4 +72,39 @@ To save a script. File > Save as > Selected the 'Powershell Scripts' folder > Sa
 Screenshots: https://imgur.com/n5DNY7H, https://imgur.com/rfrJwD6, https://imgur.com/uGoOBiK
 
 
- 
+Powershell Comments (#): A comment is a line a code that won't be executed. 
+
+In the editor:
+#I found Waldo!
+
+Screenshot: https://imgur.com/UjvGHma
+
+You can also disabled code without deleting it with comments.
+
+In the editor:
+#I found Waldo!
+#Write-Host "Where's Waldo"
+
+Screenshot: https://imgur.com/DyOaeml
+
+
+Cmdlets: Cmdlets performs a specific task in the PowerShell environment. Cmdlets are designed to be used in a pipeline, allowing users to chain multiple cmdlets together to perform complex operations. It provides a powerful way to automate tasks and manage system configurations. Cmdlets uses a verb-noun (Ex. Write-Host) naming convention.
+
+Example 1: Write-Host
+Example 2: Get-ExecutionPolicy
+Example 3: Set-ExecutionPolicy
+
+
+Parameters: You can change the script's behavior by using parameters without changing the code.
+
+In the editor:
+Write-Host "Where's Waldo" -NoNewline
+Write-Host "I can not find Waldo"
+
+-NoNewline: This command will not run the script in two lines in the console. It will run in one line.
+
+Without parameter screenshot: https://imgur.com/ZTxtZVA
+With parameter screenshot: https://imgur.com/xlAqWjV
+
+
+
