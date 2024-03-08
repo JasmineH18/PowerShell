@@ -17,12 +17,19 @@ It shows I'm on PowerShell version 5.
 Screenshot: https://imgur.com/CKHRWqp
 
 
-Get-Help *: This will display help information for all the cmdlets.
+Get-Help *: This will display help information for all the cmdlets. Another way to get information is to use cmdlet name instead of '*'.
 
+Example 1
 In the terminal:
 Get-Help *
 
 Screenshots: https://imgur.com/hMJeOJC, https://imgur.com/qFMRzFd
+
+Example 2
+In the terminal:
+Get-Help Get-Host
+
+Screenshot: https://imgur.com/mLv7hwU
 
 
 Checking and setting up Execution Policy to run scripts
@@ -117,6 +124,26 @@ Write-Host "I can not find Waldo"
 
 Without parameter screenshot: https://imgur.com/ZTxtZVA
 With parameter screenshot: https://imgur.com/xlAqWjV
+
+
+Pipeline (piping - or combining - commands). Piping commands will let you combine cmdlets into pipelines. Pipelines uses '|'.
+
+Example:
+Command-1 | Command-2 
+
+In the terminal:
+"Spring is coming!" | Out-File Seasons.txt
+ls
+cat .\Seaons.txt
+
+Output: Spring is coming!
+
+Screenshot: https://imgur.com/3nzM6a0
+
+
+Variables
+
+
 
 
 
