@@ -17,6 +17,14 @@ It shows I'm on PowerShell version 5.
 Screenshot: https://imgur.com/CKHRWqp
 
 
+Get-Help *: This will display help information for all the cmdlets.
+
+In the terminal:
+Get-Help *
+
+Screenshots: https://imgur.com/hMJeOJC, https://imgur.com/qFMRzFd
+
+
 Checking and setting up Execution Policy to run scripts
 
 To see your current Execution Policy.
@@ -94,6 +102,10 @@ Example 1: Write-Host
 Example 2: Get-ExecutionPolicy
 Example 3: Set-ExecutionPolicy
 
+Get-Command -commandTyper Cmdlet: In PowerShell(Not ISE), this will list all the cmdlets you can use and what module they are from.
+
+Screenshot: https://imgur.com/FYLim7t
+
 
 Parameters: You can change the script's behavior by using parameters without changing the code.
 
@@ -105,6 +117,8 @@ Write-Host "I can not find Waldo"
 
 Without parameter screenshot: https://imgur.com/ZTxtZVA
 With parameter screenshot: https://imgur.com/xlAqWjV
+
+
 
 
 
