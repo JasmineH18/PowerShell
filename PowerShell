@@ -229,18 +229,45 @@ The output should show it's a string.
 Screenshot: https://imgur.com/Acggydm
 
 
+Arithmetic with variables.
 
+Example 1
+In the terminal:
+$x = 9
+$y = 6
+$x + $y
 
+Output: 
+15
 
+Screenshot: https://imgur.com/VlGTR8V
 
+Example 2
+In the terminal:
+$x * $y
 
+Output: 
+54
 
+Screenshot: https://imgur.com/m57lGyx
 
+Example 3
+In the terminal:
+$x - $y
 
+Output: 
+3
 
+Screenshot: https://imgur.com/ZvsNsry
 
+Example 4
+In the terminal:
+$x / $y
 
+Output: 
+1.5
 
+Screenshot: https://imgur.com/xCyHajy
 
 
 
