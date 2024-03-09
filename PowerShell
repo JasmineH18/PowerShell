@@ -141,7 +141,42 @@ Output: Spring is coming!
 Screenshot: https://imgur.com/3nzM6a0
 
 
-Variables
+Variables: PowerShell Variables is a storage location used to hold data or values within a PowerShell script or command. Variables in PowerShell are denoted by a dollar sign ($) followed by the variable name.
+
+In the terminal:
+$FavMovie = "Black Widow"
+
+To show the value of your variable.
+
+In the terminal:
+$FavMovie
+
+Output: 
+Black Widow
+
+Screenshot: https://imgur.com/btUM85f
+
+Pipe a variable.
+
+In the terminal:
+$FavMovie | Out-File FavMovie.txt
+ls
+cat '\FavMovie.txt
+
+Screenshot: https://imgur.com/a1iEvl0
+
+
+PowerShell Variable/Data Types
+
+1. String: Used to store text data.
+2. Integer: Used to store whole numbers.
+3. Double: Used to store floating-point numbers.
+4. Boolean: Used to store true or false values.
+5. Array: Used to store a collection of values.
+6. Hashtable: Used to store key-value pairs.
+7. Object: Used to store complex data structures.
+8. Null: Represents a variable with no value assigned.
+
 
 
 
