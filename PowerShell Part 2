@@ -1,1 +1,126 @@
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://www.microsoft.com/en-us/software-download/windows10
+-https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.4
+
+Environments Used:
+-Windows 10 in Virtualbox
+
+Returned back to PowerShell ISE.
+
+Collecting user input with Read-Host.
+
+Read-Host: This cmdlet sets a variable to the read-host and wait for user input. Screenshot https://imgur.com/L8RwgD1
+
+In the editor:
+$FavColor = Read-Host -prompt "What is your favorite hair color?"
+
+Output:
+What is your favorite hair color?:
+
+In the console: Typed 'Black' > Pressed Enter 
+What is your favorite hair color?: Black
+PS C:\Users\Queen> $FavColor
+
+Output:
+Black
+
+Add options to the Read-Host. Screenshot https://imgur.com/Y4cFCgN
+
+In the editor:
+Write-Host "What is your favorite color?"
+Write-Host "1. Red"
+Write-Host "2. Brunette"
+Write-Host "3. Black"
+Write-Host "4. Purple"
+$FavColor = Read-Host -prompt "What is your favorite hair color?"
+
+Output:
+What is your favorite color?
+1. Red
+2. Brunette
+3. Black
+4. Purple
+What is your favorite hair color?: 
+
+In the console: Typed '4' > Pressed Enter 
+What is your favorite hair color?: 4
+PS C:\Users\Queen> $FavColor
+
+Output:
+4
+
+
+If... then... else conditionals: If/then/else statements run code blocks if a specified conditional test evaluates to true or false.
+
+If statement
+In the editor:
+$Fishcaught = "30"
+If ($Fishcaught -eq 30) {Write-Host "You've won a prize!"}
+
+Output:
+You've won a prize!
+
+Screenshot: https://imgur.com/LJoH1OF
+
+If conditions not met.
+
+In the editor:
+$Fishcaught = "29"
+If ($Fishcaught -eq 30) {
+        Write-Host "You've won a prize!"
+    } Else {
+        Write-Host "You get no prize."
+    }
+
+Output: 
+You get no prize.
+
+Screenshot: https://imgur.com/qKJWChf
+
+If conditions are met.
+
+In the editor:
+$Fishcaught = "30"
+If ($Fishcaught -eq 30) {
+        Write-Host "You've won a prize!"
+    } Else {
+        Write-Host "You get no prize."
+    }
+
+Output: 
+You've won a prize!
+
+Screenshot: https://imgur.com/7Y4V3GP
+
+
+Elseif conditionals: Elseif is used to specify an alternative condition to be evaluated if the initial "If" condition is false.
+
+-ge is short for greater than or equal to
+-le is short for less than or equal to
+
+In the editor:
+$TemperatureNum = 95
+If($TemperatureNum -ge 1 -and $TemperatureNum -le 80) {
+    Write-Host "The temperature is good."
+} Elseif ($TemperatureNum -ge 81 -and $TemperatureNum -le 90) {
+    Write-Host "The temperature is hot!"
+} Elseif ($TemperatureNum -ge 91 -and $TemperatureNum -le 100) {
+    Write-Host "The temperature is too hot to go outside!"
+}
+
+Output:
+The temperature is too hot to go outside!
+
+Screenshot: https://imgur.com/TNaDrsr
+
+
+Switch Statements: 
+
+
+
+
+
+
+
 
