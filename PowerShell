@@ -302,6 +302,163 @@ Get-Member -InputObject $FavMovie
 Screenshot: https://imgur.com/5FzdvT5
 
 
+Arrays: Arrays are used to store a collection of values.
+
+In the terminal:
+$Marvel = @('Thor', 'Hulk', 'Scarlet Witch', 'Doctor Strange')
+$Marvel 
+
+Output:
+Thor
+Hulk
+Scarlet Witch
+Doctor Strange
+
+Screenshot: https://imgur.com/e1QA6VE
+
+Using the GetType method
+
+In the terminal:
+$Marvel.GetType()
+
+Output:
+It'll show it's an object with the basetype is array.
+
+Screenshot: https://imgur.com/n9gQmw7
+
+Retrieve values from specific values. The first element of an array always start with the number 0. Screenshot https://imgur.com/jJPoiBI
+
+Example 1
+In the terminal:
+$Marvel[0]
+
+Output:
+Thor
+
+Example 2
+In the terminal:
+$Marvel[1]
+
+Output:
+Hulk
+
+Example 3
+In the terminal:
+$Marvel[2]
+
+Output:
+Scarlet Witch
+
+Know the length of the specific variable array. Screenshot https://imgur.com/yLNDwtr
+
+Example 1
+In the terminal:
+$Marvel[0].Length
+
+Output:
+4
+
+Example 2
+In the terminal:
+$Marvel[1].Length
+
+Output:
+4
+
+Example 3
+In the terminal:
+$Marvel[2].Length
+
+Output:
+13
+
+Add extra to the variable array. Screenshot https://imgur.com/ygQpeaC
+
+In the terminal:
+$Marvel += "Deadpool"
+$Marvel
+
+Output:
+Thor
+Hulk
+Scarlet Witch
+Doctor Strange
+Deadpool
+
+
+Hashtables: Hastables are used to store key-value pairs. Screenshots https://imgur.com/XT0piKq, https://imgur.com/qwssAGC
+
+Example 1
+In the terminal:
+$Shopping = @{key1 = "item1"; key2 = item2"}
+$Shopping
+
+Output:
+key1       item1
+key2       item2
+
+Example 2
+In the terminal:
+$Weather = @{Hot = "Summer"; Cold = "Winter"; Rain = "Spring"}
+$Weather
+
+Output:
+Rain      Spring
+Hot       Summer
+Cold      Winter
+
+Add to an Hashtable. Screenshot https://imgur.com/IEoItQF
+
+In the terminal:
+$Weather.Add("Cool", "Fall")
+$Weather
+
+Output:
+Cool      Fall
+Rain      Spring
+Hot       Summer
+Cold      Winter
+
+Edit a key-value pair from the hashtable. Screenshot https://imgur.com/p9HXQ0a
+
+In the terminal:
+$Weather.Set_Item("Hot", "July")
+$Weather
+
+Output:
+Cool      Fall
+Rain      Spring
+Hot       July
+Cold      Winter
+
+Retrieve a specific key-value pair. Screenshot https://imgur.com/4Db38uH
+
+Example 1
+In the terminal:
+$Weather."Cool"
+
+Output:
+Fall
+
+Eaxmple 2
+In the terminal:
+$Weather["Cool"]
+
+Output:
+Fall
+
+Remove a specific key-value pair. Screenshot https://imgur.com/HM197jp
+
+In the terminal:
+
+$Weather.Remove("Hot")
+$Weather
+
+Output:
+Cool      Fall
+Rain      Spring
+Cold      Winter
+
 
 
 
