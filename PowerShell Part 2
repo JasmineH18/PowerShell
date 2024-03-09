@@ -115,7 +115,26 @@ The temperature is too hot to go outside!
 Screenshot: https://imgur.com/TNaDrsr
 
 
-Switch Statements: 
+Switch Statements: This allows you to compare a value against multiple conditions. Use a single variable that you want to compare against multiple values.
+
+break: You would use 'break' when we match and you don't want to keep evaluating. 
+
+In the editor:
+$MartialArts = "Taekwondo"
+Switch($MartialArts) {
+    "Taekwondo" {Write-Host "Originated from Korea"; break}
+    "Brazilian jiu-jitsu" {Write-Host "Originated from Brazil"; break}
+    "Tai chi" {Write-Host "Originated from China"; break}
+}
+
+Output:
+Originated from Korea
+
+Screenshot: https://imgur.com/0Dd8M0H
+
+
+For Loops
+
 
 
 
