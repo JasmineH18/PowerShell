@@ -270,6 +270,36 @@ Output:
 Screenshot: https://imgur.com/xCyHajy
 
 
+Objects: Everything in PowerShell is an object. Objects are made up of properties and methods.
+Properties: Variables that describe the object (characteristics).
+Methods: Functions that define how to use the object (actions).
+
+Object properties
+
+In the terminal:
+$FavMovie.Length
+
+Output:
+11
+
+Screenshot: https://imgur.com/GSTxQvl
+
+Get all properties of an object with Select-Object.
+
+In the terminal:
+$FavMovie | Select-Object -Property *
+
+Output:
+Length 11
+
+Screenshot: https://imgur.com/hJ6TCN3
+
+Use Get-Member to get all of the different possible methods of an object.
+
+In the terminal:
+Get-Member -InputObject $FavMovie
+
+Screenshot: https://imgur.com/5FzdvT5
 
 
 
