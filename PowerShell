@@ -177,6 +177,73 @@ PowerShell Variable/Data Types
 7. Object: Used to store complex data structures.
 8. Null: Represents a variable with no value assigned.
 
+Determine the type of variable.
+
+Example 1
+In the terminal:
+$FavMovie.GetType()
+
+Output: 
+The output should show it's a string.
+
+Screenshot: https://imgur.com/DYTjtBm
+
+Example 2
+In the terminal:
+$FavMovie = 5
+$FavMovie.GetType()
+
+Output: 
+The output should show it's a integer.
+
+Screenshot: https://imgur.com/OsajRXn
+
+Example 3
+In the terminal:
+$FavMovie = 5.9
+$FavMovie.GetType()
+
+Output: 
+The output should show it's a double floating point.
+
+Screenshot: https://imgur.com/m4q2Clk
+
+Example 4
+In the terminal:
+$FavMovie = $true
+$FavMovie.GetType()
+
+Output: 
+The output should show it's a boolean.
+
+Screenshot: https://imgur.com/yQFumYJ
+
+Example 5
+In the terminal:
+$FavMovie = "Black Widow"
+$FavMovie.GetType()
+
+Output: 
+The output should show it's a string.
+
+Screenshot: https://imgur.com/Acggydm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
