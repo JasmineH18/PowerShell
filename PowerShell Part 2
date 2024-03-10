@@ -135,9 +135,49 @@ Screenshot: https://imgur.com/0Dd8M0H
 
 For Loops: For Loops are used in PowerShell scripting to iterate over a set of items or perform a specific action a certain number of times.
 
+Example 1
+For each iteration of this loop. For loop have three parameters. I have four elements: IT, Smile, The Nun, and Megan. Our counter starts from 0 (IT is the 0). The condition counter will be less than equal to 3 (Smile, The Nun, and Megan is 1,2,3). Stop the loop using $counter++. '++' is taking the value of counter and adding 1 to itself.    
 
+Our counter: $counter =0
+Our Condition: $counter -le 3
+Stop the loop: $counter++
+To loop through our counter: $HorrorMovies[$counter]
 
+In the editor:
+$HorrorMovies = @('IT', 'Smile', 'The Nun', 'Megan')
+For ($counter =0; $counter -le 3;$counter++){
+     Write-Host "I can not wait to watch" $HorrorMovies[$counter]
+}
 
+Output:
+I can not wait to watch IT
+I can not wait to watch Smile
+I can not wait to watch The Nun
+I can not wait to watch Megan
+
+Screenshot: https://imgur.com/kcpYFGR
+
+Example 2
+If you change the $counter -le 3 to $counter -le 6. It will notice no extra elements are found, and it'll be blank.
+
+In the editor:
+$HorrorMovies = @('IT', 'Smile', 'The Nun', 'Megan')
+For ($counter =0; $counter -le 4;$counter++){
+     Write-Host "I can not wait to watch" $HorrorMovies[$counter]
+}
+
+Output:
+I can not wait to watch IT
+I can not wait to watch Smile
+I can not wait to watch The Nun
+I can not wait to watch Megan
+I can not wait to watch
+I can not wait to watch
+I can not wait to watch
+
+Screenshot: https://imgur.com/l4Xm96F
+
+Check the lenght of the element.
 
 
 
