@@ -278,6 +278,28 @@ Batman is part of DC!
 Screenshot: https://imgur.com/qNlBRDC
 
 
+Do While Loops: The condition is evaluated after the script has run.
+
+In the editor:
+$DC = @('Batman', 'Catwoman', 'Penguin', 'Poison Ivy', 'The Riddler', 'The Mad Hatter')
+$counter = 0
+Do {
+   Write-Host $DC[$counter] "is part of DC!" 
+   $counter++
+} While ($counter -ne 6)
+
+Output:
+Batman is part of DC!
+Catwoman is part of DC!
+Penguin is part of DC!
+Poison Ivy is part of DC!
+The Riddler is part of DC!
+The Mad Hatter is part of DC!
+
+Screenshot: https://imgur.com/ovNcW9g
+
+
+Defining Custom Functions
 
 
 
