@@ -177,7 +177,39 @@ I can not wait to watch
 
 Screenshot: https://imgur.com/l4Xm96F
 
-Check the lenght of the element.
+Check the length value of the variable $HorrorMovies.
+
+In the console: 
+$HorrorMovie.Length
+
+Output:
+4
+
+Screenshot: https://imgur.com/jdjQD7p
+
+
+Foreach Loops: Foreach Loops iterate over a collection of items, such as an array or a list, and perform a specific action on each item in the collection.
+
+In the editor:
+$HorrorMovies = @('IT', 'Smile', 'The Nun', 'Megan')
+Foreach ($Movies in $HorrorMovies){
+    Write-Host $Movies "is scary!"
+}
+
+Output:
+IT is scary!
+Smile is scary!
+The Nun is scary!
+Megan is scary!
+
+Screenshot: https://imgur.com/Ts6MHTK
+
+
+
+
+
+
+
 
 
 
