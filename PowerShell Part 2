@@ -205,8 +205,77 @@ Megan is scary!
 Screenshot: https://imgur.com/Ts6MHTK
 
 
+While Loops: While Loop evaluates a condition before each iteration of the loop, and if the condition is true, the code block is executed.
 
+Start the counter to 0 (Batman is 0): $counter = 0
+While counter not equal to 6: $counter -ne
+Display the strings: Write-Host $DC[$counter]
+Stop the loop: $counter++
 
+In the editor:
+$DC = @('Batman', 'Catwoman', 'Penguin', 'Poison Ivy', 'The Riddler', 'The Mad Hatter')
+$counter = 0 
+While($counter -ne 6){
+    Write-Host $DC[$counter]
+    $counter++;
+}
+
+Output:
+Batman
+Catwoman
+Penguin
+Poison Ivy
+The Riddler
+The Mad Hatter
+
+Screenshot: https://imgur.com/gQP9UJC
+
+You can also echo the variable array back and/or show the element length.
+
+In the editor:
+$DC = @('Batman', 'Catwoman', 'Penguin', 'Poison Ivy', 'The Riddler', 'The Mad Hatter')
+$counter = 0 
+While($counter -ne 6){
+    Write-Host $DC[$counter] "is part of DC!"
+    $DC[$counter].Length
+    $counter++;
+}
+
+Output:
+Batman is part of DC!
+6
+Catwoman is part of DC!
+8
+Penguin is part of DC!
+7
+Poison Ivy is part of DC!
+10
+The Riddler is part of DC!
+11
+The Mad Hatter is part of DC!
+14
+
+Screenshot: https://imgur.com/VfdsrT8
+
+Infinite While loop: You can set it to equal to some condition that will never be met if you remove the $counter++.
+
+Removed ($counter++;) and changed the (-ne 6) to -ne -1
+
+In the editor:
+$DC = @('Batman', 'Catwoman', 'Penguin', 'Poison Ivy', 'The Riddler', 'The Mad Hatter')
+$counter = 0 
+While($counter -ne -1){
+    Write-Host $DC[$counter] "is part of DC!"
+    $DC[$counter].Length
+}
+
+Output: It'll repeat it until you press CTRL + C
+Batman is part of DC!
+6
+Batman is part of DC!
+6
+
+Screenshot: https://imgur.com/qNlBRDC
 
 
 
