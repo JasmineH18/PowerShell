@@ -301,8 +301,70 @@ Screenshot: https://imgur.com/ovNcW9g
 
 Defining Custom Functions
 
+Defining custom functions involves creating user-defined functions that perform specific tasks or operations within the PowerShell scripting environment. These functions can be tailored to meet the unique requirements of a PowerShell script or automation task.
+
+In the editor:
+function Test-Google {
+    ping google.com
+}
+Test-Google
+
+Ping: Ping is a network utility tool used to test the reachability of a host on an Internet Protocol (IP) network. It sends a series of ICMP (Internet Control Message Protocol) echo request packets to the target host and waits for a response.
+
+Screenshot: https://imgur.com/6LA3Zo5
+
+You can test it in the console since it's defined in the environment. Screenshot: https://imgur.com/Vc06CRr
+
+In the console:
+Test-Google
+
+You can defined the pings.
+
+In the editor:
+function Test-Google {
+    param(
+        $PingCount
+    )
+    Test-Connection google.com -Count $PingCount
+}
+Test-Google -PingCount 6
+
+Screenshot: https://imgur.com/Loog9o1
+
+Test-Connection: This is a cmdlet that test network connectivity between the local computer and a remote host. It sends ICMP echo request packets to the target host and waits for a response. It's similar to Ping.
+
+Param: Is used to define parameters in a function or script. Parameters allow you to pass values or data into a script or function. 
+
+$PingCount: This is a variable that can be used to store the number of ping packets to send when testing network connectivity using the Test-Connection cmdlet.
 
 
+Defining Custom Advanced Functions
+
+Set a cmdlet binding without using -PingCount
+
+CmdletBinding allows you to define advanced parameters and attributes for a script or function, turning it into a cmdlet. After CmdletBinding, you can use parameter validation, pipeline support, and common parameters like Verbose, Debug, and ErrorAction
+
+Int32: Is a 32-bit signed data type. Integers are whole numbers without any decimal points.
+
+In the editor:
+Function Test-Google {
+         [CmdletBinding()] #turns into adv. function
+         Param(
+                 [Parameter(Mandatory)]
+                 [int32] $PingCount
+         )
+            Test-Connection google.com $PingCount
+}
+Test-Google 
+
+Output:
+Cmdlet Test-Google at command pipeline position 1 
+Supply values for the following parameters:
+PingCount: 
+
+Added 6 to ‘PingCount:’ 
+
+Screenshot:
 
 
 
