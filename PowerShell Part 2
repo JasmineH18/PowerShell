@@ -347,13 +347,13 @@ CmdletBinding allows you to define advanced parameters and attributes for a scri
 Int32: Is a 32-bit signed data type. Integers are whole numbers without any decimal points.
 
 In the editor:
-Function Test-Google {
-         [CmdletBinding()] #turns into adv. function
-         Param(
-                 [Parameter(Mandatory)]
-                 [int32] $PingCount
-         )
-            Test-Connection google.com $PingCount
+function Test-Google {
+    [CmdletBinding()] #turns into adv. function
+    Param(
+        [Parameter(Mandatory)]
+        [int32] $PingCount
+    )
+    Test-Connection google.com -Count $PingCount
 }
 Test-Google 
 
@@ -362,9 +362,70 @@ Cmdlet Test-Google at command pipeline position 1
 Supply values for the following parameters:
 PingCount: 
 
-Added 6 to ‘PingCount:’ 
+Added 4 to ‘PingCount:’ 
 
-Screenshot:
+Screenshot: https://imgur.com/vJR6WOv
+
+
+Error Handling and Exceptions
+
+Error handling and exception handling are mechanisms used to manage and respond to errors that occur during script execution. Error handling allows you to anticipate and handle potential errors, ensuring that scripts can recover from unexpected situations.
+
+Example 1
+Throw: Generates a terminating error.
+
+In the editor:
+Throw "There's an issue"
+
+Screenshot: https://imgur.com/49d8QKu
+
+Example 2
+ErrorAction: This parameter allows you to define how PowerShell cmdlets and functions should respond to errors. You can set the error action preference to ‘Stop’ (Stop the script execution) or ‘Continue’ (Ignore the error).
+
+In the editor:
+Write-Error -Message “There’s an issue!” -ErrorAction Stop
+
+Screenshot: https://imgur.com/PDoS3nx
+
+Example 3
+Try/catch allows you to specify a script that should be executed in case of an error within a specific script. By wrapping potentially error-prone code in a try script and specifying error handling logic in a catch script, you can handle exceptions and prevent script termination.
+
+In the editor:
+function Test-Google {
+    [CmdletBinding()] #turns into adv. function
+    Param(
+        [Parameter(Mandatory)]
+        [int32] $PingCount
+    )
+    Test-Connection google.com -Count $PingCount
+    Write-Error -Message “There’s an issue!” -ErrorAction Stop
+}
+try {Test-Google -ErrorAction Stop} catch {Write-Output “Host problem!” Write-Output $_} 
+
+
+Output:
+Cmdlet Test-Google at command pipeline position 1 
+Supply values for the following parameters:
+PingCount: 4
+
+Added 4 to ‘PingCount:’ 
+
+Screenshot: https://imgur.com/AytyxaW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
