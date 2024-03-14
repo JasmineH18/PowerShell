@@ -5,3 +5,31 @@ Resources Used:
 
 Environments Used:
 -Windows 10 in Virtualbox
+
+PowerShell automation uses PowerShell scripts to automate tasks and processes on a Windows operating system. You can automate administrative tasks, manage system configurations, and perform various other tasks through the command-line interface.
+
+Opened PowerShell ISE.
+
+Create a scheduled task.
+
+In the editor:
+$trigger = New-ScheduledTaskTrigger -At 3pm -Daily
+$action = New-ScheduledTaskAction -Execute “powershell.exe” -Argument “-File ‘”C:\Scripts\TestGoogle.ps1’””
+$settings = New-ScheduledSettingsSet
+Register-ScheduleTask -Action $action -trigger -TaskName “Test Google” -Description “Tests connection with google.com” -Settings $settings
+
+$trigger = New-ScheduledTaskTrigger -At 3pm -Daily`: This line creates a new scheduled task trigger that will run the task at 3 PM daily.
+
+$action = New-ScheduledTaskAction -Execute “powershell.exe” -Argument “-File ‘C:\\Scripts\\TestGoogle.ps1’”`: This line creates a new scheduled task action that specifies the execution of a PowerShell script located at "C:\Scripts\TestGoogle.ps1".
+
+$settings = New-ScheduledSettingsSet`: This line creates a new scheduled task settings set.
+
+Register-ScheduleTask -Action $action -trigger -TaskName “Test Google” -Description “Tests connection with google.com” -Settings $settings`: This line registers the scheduled task with the specified action, trigger, task name ("Test Google"), description ("Tests connection with google.com"), and settings.
+
+
+
+
+
+
+
+
