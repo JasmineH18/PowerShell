@@ -13,22 +13,22 @@ Opened PowerShell ISE.
 Create a scheduled task.
 
 In the editor:
-$trigger = New-ScheduledTaskTrigger -At 3pm -Daily
-$action = New-ScheduledTaskAction -Execute “powershell.exe” -Argument “-File ‘”C:\Scripts\TestGoogle.ps1’””
-$settings = New-ScheduledSettingsSet
-Register-ScheduleTask -Action $action -trigger -TaskName “Test Google” -Description “Tests connection with google.com” -Settings $settings
+$trigger = New-ScheduledTaskTrigger -At 4:21pm -Daily
+$action = New-ScheduledTaskAction -Execute “powershell.exe” -Argument “-File ‘C:\\Scripts\\TestGoogle.ps1’”
+$settings = New-ScheduledTaskSettingsSet
+Register-ScheduledTask -Action $action -Trigger $trigger -TaskName “Test Google” -Description “Tests connection with google.com” -Settings $settings
 
 $trigger = New-ScheduledTaskTrigger -At 3pm -Daily`: This line creates a new scheduled task trigger that will run the task at 3 PM daily.
 
 $action = New-ScheduledTaskAction -Execute “powershell.exe” -Argument “-File ‘C:\\Scripts\\TestGoogle.ps1’”`: This line creates a new scheduled task action that specifies the execution of a PowerShell script located at "C:\Scripts\TestGoogle.ps1".
 
-$settings = New-ScheduledSettingsSet`: This line creates a new scheduled task settings set.
+$settings = New-ScheduledSettingsSet: This line creates a new scheduled task settings set.
 
 Register-ScheduleTask -Action $action -trigger -TaskName “Test Google” -Description “Tests connection with google.com” -Settings $settings`: This line registers the scheduled task with the specified action, trigger, task name ("Test Google"), description ("Tests connection with google.com"), and settings.
 
+This scheduled task named "Test Google" will run a PowerShell script daily at 3PM to test the connection with google.com.
 
-
-
+Screenshots: https://imgur.com/f5SVROa, https://imgur.com/7vjBuxl
 
 
 
