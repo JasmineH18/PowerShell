@@ -413,6 +413,57 @@ Added 4 to ‘PingCount:’
 Screenshot: https://imgur.com/AytyxaW
 
 
+Returned back to PowerShell terminal.
+
+Create a file with New-Item.
+
+In the terminal
+New-Item -path C:\Users\Queen\Documents\Scarlet.txt -type "file" -value "I'm looking for my children!"
+ls
+
+Output: 
+Scarlet.txt
+
+Screenshots: https://imgur.com/223zyDI, https://imgur.com/4jQKwV4
+
+
+Create a folder with New-Item.
+
+In the terminal
+New-Item -path C:\Documents -name "Wolverine" -type directory
+ls
+
+Output:
+Wolverine
+
+Screenshots: https://imgur.com/rouXiwg, https://imgur.com/3bW6nsk
+
+
+Copy file with Copy-Item.
+
+In the terminal:
+Copy-Item C:\Documents\Wolverine -destination C:\Users\Queen\Documents\
+cd C:\Users\Queen\Documents
+ls
+
+Screenshot: https://imgur.com/i37uGkm
+
+
+Move file with Move-Item.
+
+In the terminal:
+C:\Users\Queen\Documents> Move-Item -path ".\Scarlet.txt" -destination ".\Scrlet.txt\"
+ls
+cd Scrlet.txt
+ls
+
+Screenshot: https://imgur.com/HnIHf8E
+
+
+
+
+
+
 
 
 
