@@ -460,15 +460,33 @@ ls
 Screenshot: https://imgur.com/HnIHf8E
 
 
+Delete file with Remove-Item.
+
+In the terminal:
+Remove-Item .\Scarlet.txt
+ls 
+
+Screenshot: https://imgur.com/dXxijWu
 
 
+Confirm if a file is there with Test-Path.
+
+In the terminal:
+Test-Path "C:\Users\Queen\Documents\Scrlet.txt"
+
+Output:
+True
+
+Screenshot: https://imgur.com/4nLGkrb
 
 
+Rename something with Rename-Item.
 
+In the terminal:
+Rename-Item -path .\Scrlet.txt -newname ScarletWitch.txt
+ls
 
-
-
-
+Screenshot: https://imgur.com/1v0KQPc
 
 
 
