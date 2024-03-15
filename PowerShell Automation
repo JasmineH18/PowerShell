@@ -96,6 +96,22 @@ Get-ScheduledJob -Name "TestGoogle*"
 
 Screenshot: https://imgur.com/lc3lbkV
 
+Example 3
+View details of a scheduled job.
+In the console:
+Get-ScheduledJob -Name "TestGoogle*" | Get-JobTrigger
+
+Screenshot: https://imgur.com/m6GyE97
+
+Example 4
+View specific triggers of a scheduled job.
+In the console:
+Get-ScheduledJob -Name "TestGoogle*" | Select Name,State
+
+Screenshot: https://imgur.com/5RLcDbq
+
+
+Remove a scheduled job.
 
 
 
