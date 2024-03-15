@@ -30,6 +30,75 @@ This scheduled task named "Test Google" will run a PowerShell script daily at 3P
 
 Screenshots: https://imgur.com/f5SVROa, https://imgur.com/7vjBuxl
 
+View in Task Scheduler
+Start > Typed and Opened Task Scheduler > Go to 'Task Scheduler Library' > Scrolled down to 'Test Google'. It shows the task I created.
+
+Screenshots: https://imgur.com/mMWcSfE, General https://imgur.com/GJvlkT1, Triggers https://imgur.com/KlG9qRn, Actions https://imgur.com/YvmFfEE
+
+
+In PowerShell terminal.
+
+View a scheduled task.
+
+Example 1
+In the terminal:
+Get-ScheduledTask
+
+Screenshot: https://imgur.com/undefined
+
+Example 2
+In the terminal:
+Get-ScheduledTask -TaskName "Test Google"
+
+Screenshot: https://imgur.com/cvlVwzE
+
+Example 3
+In the terminal:
+Get-ScheduledTask -TaskName "Test Google" | Get-ScheduledTaskInfo
+
+Screenshot: https://imgur.com/RQocbeu
+
+
+Remove a scheduled task.
+
+In the terminal:
+Unregister-ScheduledTask -TaskName "Test Google" -Confirm:$false
+
+If I type 'Get-ScheduledTask -TakeName "Test Google"', it will show an error of task does not exist.
+
+Screenshot: https://imgur.com/kIZfLpc
+
+
+Create a scheduled Jobs
+
+Run as Administrator In PowerShell ISE.
+
+In the editor:
+$Trigger = New-JobTrigger -Daily -At 8:10pm
+$Scriptblock = { C:\Scripts\TestGoogle.ps1 }
+Register-ScheduledJob -Name "TestGoogle Job" -ScriptBlock $Scriptblock -Trigger $Trigger
+
+Screenshot: https://imgur.com/SMCJ9eg
+
+
+View scheduled jobs.
+
+Example 1
+In the console:
+Get-ScheduledJob
+
+Screenshot: https://imgur.com/zYfEcB5
+
+Example 2
+Use filter to find a scheduled job.
+In the console:
+Get-ScheduledJob -Name "TestGoogle*"
+
+Screenshot: https://imgur.com/lc3lbkV
+
+
+
+
 
 
 
