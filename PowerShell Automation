@@ -121,12 +121,37 @@ It will show there’s no scheduled jobs.
 
 Screenshot: https://imgur.com/kfh1D0Q
 
-
+(DON'T FORGET TO ADD SCREENSHOT!!!)
 Build graphical user interfaces (GUI) with PowerShell scripts using Windows Forms.
 
-I installed Visual Studio 2022 with the free community edition. 
+I installed Visual Studio 2022 with the free community edition. I made sure to download .net Desktop Development in Visual Studio, as the Windows Forms are located there.
 
+Step 1. Opened Visual Studio. 
+Step 2. Select 'Create a new project'. 
+Step 3. Searched for 'forms' in the search function.
+Step 4. Select 'Windows Forms App (.NET Framework).
+Step 5. Configured my new project. Named the project 'PowerShellGUI', and selected a location.
+Step 6. Clicked Create
 
+Once the form appeared, opened the 'Toolbox' on the left side. In the form properties on the right, located the form name (called Form1). Changed the name to 'PowerShell'. Srcolled down to 'Design' section and changed the 'Form1 name' to 'PowerShell'.
+
+Step 1: In the Toolbox, selected/dragged 'TextBox' in the 'Common Controls' section to the form.
+Step 2: Selected/dragged 'Label' in the 'Common Controls' section to the form above the textbox.
+Step 3: Selected/dragged 'Button' in the 'Common Controls' section to the form right side of the textbox.
+Step 4: Selected/dragged 'TextBox' in the 'Common Controls' section to the form under the first textbox.
+
+Customize
+Step 1: Clicked the label in the form > Renamed the label in the properties to 'ComputerName'. Renamed the 'Design' label in the properties to 'Label1'.
+
+Step 2: Clicked the first textbox in the form > Renamed the 'Design' textbox in the properties to 'ATL-PC-BOX'. Adjusted the textbox font size to 14 in the properties > Adjusted the textbox and button in the form to be neater.
+
+Step 3: Clicked the button in the form > Renamed the 'Text' button in the properties to 'Run'. Adjusted the button font size to 14 in the properties 
+
+Step 4: Clicked the second textbox in the form > Renamed the 'Design' textbox in the properties to 'Output'. Changed the 'Multiline' to 'True' to make adust the textbox to be bigger, as it's the output.
+
+Step 5: Go to 'File' > Save Form1.cs
+
+Step : Opened PowerShell
 
 
 
