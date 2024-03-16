@@ -113,6 +113,18 @@ Screenshot: https://imgur.com/5RLcDbq
 
 Remove a scheduled job.
 
+In the console:
+Unregister-ScheduledJob -Name “TestGoogle Job”
+Get-ScheduledJob
+
+It will show there’s no scheduled jobs.
+
+Screenshot: https://imgur.com/kfh1D0Q
+
+
+Build graphical user interfaces (GUI) with PowerShell scripts using Windows Forms.
+
+I installed Visual Studio 2022 with the free community edition. 
 
 
 
