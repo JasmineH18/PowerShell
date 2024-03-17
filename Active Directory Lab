@@ -10,7 +10,8 @@ Environments Used:
 
 Started Windows Server VM.
 
-Configure local server.
+Configure local server in Server Manager.
+
 In the 'Quick Start', select 'Add roles and features'. 
 In the 'Add Roles and Features Wizard'
 'Before you begin': Clicked 'Next' 
@@ -20,13 +21,16 @@ In the 'Add Roles and Features Wizard'
 'Features': It'll add .Net, clicked 'Next'
 'AD DS': Clicked 'Next'
 'Confirmation': Clicked 'Install'
-'Results': It'll install the features
+'Results': It'll show if the installation succeeded, clicked 'Close'
 
-Screenshots: https://imgur.com/MI0doPx, https://imgur.com/TD5vsU1, https://imgur.com/ySjH2uy, https://imgur.com/lHxuCOY, https://imgur.com/ZQbLXJ8, https://imgur.com/5EJZN0h, https://imgur.com/GAYnwvz, https://imgur.com/KFk1am0,        
-
-
+Screenshots: https://imgur.com/MI0doPx, https://imgur.com/TD5vsU1, https://imgur.com/ySjH2uy, https://imgur.com/lHxuCOY, https://imgur.com/ZQbLXJ8, https://imgur.com/5EJZN0h, https://imgur.com/GAYnwvz, https://imgur.com/KFk1am0, https://imgur.com/Jkqqnj1       
 
 
+Post-deployment configuration
+Clicked the flag symbol (Notifications) at the top > 'Promote this server to a domain controller'
+
+In the 'Active Directory Domain Services Configuration Wizard
+'Deployment Configuration': Select 'Add a new forest' > 'Root domain name: Marvel
 
 
 
