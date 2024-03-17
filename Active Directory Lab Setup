@@ -39,13 +39,15 @@ Active Directory does have security integrated.
 First, I will create an Active Directory basic lab diagram. 
 
 Hypervisor: VirtualBox
-A hypervisor, also known as a virtual machine monitor (VMM), allows you to create and run multiple virtual machines.The hypervisor abstracts the physical hardware resources of the host machine and allocates them to virtual machines, allowing each VM to operate independently as if it were running on its own dedicated hardware. I will be using VirtualBox as the hypervisor. Virtau
+A hypervisor, also known as a virtual machine monitor (VMM), allows you to create and run multiple virtual machines.The hypervisor abstracts the physical hardware resources of the host machine and allocates them to virtual machines, allowing each VM to operate independently as if it were running on its own dedicated hardware. I will be using VirtualBox as the hypervisor. VirtualBox is a Type 2 (hosted) Hypervisor that run on top of a conventional operating system. 
 
 Virtual Machine: Windows 10
+A virtual machine (VM) is a software-based emulation of a physical computer that runs on a host machine. It allows multiple operating systems to run on a single physical machine, enabling users to create isolated environments for running applications and services. Virtual machines are created using virtualization software, which partitions the host machine's resources (such as CPU, memory, storage, and network) and allocates them to the virtual machines. I will be using Windows 10 virtual machine and it'll be the client's machine.
 
-Domain Controller: Windows Server 10
+Domain Controller: Windows Server 2022
+A domain controller is a server that is running a version of the Windows Server operating system and has Active Directory Domain Services installed. The Windows version I'll be using is 2022.
 
-Configured on the Domain Controller
+I will Configure.
 *Domain / Active Directory Domain Services (AD DS)
 *Network Address Translation
 *Dynamic Host Configuration Protocol (DHCP) Server. Using 1 scope
