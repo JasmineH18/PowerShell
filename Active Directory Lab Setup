@@ -9,11 +9,37 @@ Environments Used:
 -Windows 10 VM in VirtualBox
 
 Active Directory
+Active Directory is a directory service such as Active Directory Domain Services (AD DS) developed by Microsoft for Windows domain networks. It is a hierarchical structure that stores information about objects on the network. Active Directory uses a structured data store. Data store is also known as the directory, and it contains information about Active Directory objects. These objects are shared resources such as servers, volumes, printers, and the network user and computer accounts. 
+
+Some key features of Active Directory Domain Services include:
+
+1. User and Group Management: AD DS allows administrators to create and manage user accounts, groups, and organizational units (OUs) within the domain. This enables efficient management of user access and permissions to network resources.
+
+2. Authentication and Authorization: AD DS authenticates users and controls their access to resources based on their permissions and group memberships. It enforces security policies to ensure that only authorized users can access specific resources.
+
+3. Replication: AD DS supports replication of directory data between domain controllers to ensure consistency and fault tolerance. This helps maintain up-to-date information across the network and provides redundancy in case of server failures.
+
+4. Group Policy Management: AD DS uses Group Policy Objects (GPOs) to define and enforce security policies, settings, and configurations across the domain. This allows administrators to centrally manage and apply policies to multiple users and computers.
+
+5. Trust Relationships: AD DS supports trust relationships between domains, forests, and external directories, allowing users in one domain to access resources in another domain. This enables collaboration and resource sharing across different parts of the network.
+
+Active Directory does have security integrated. 
+
+1. Authentication and Authorization: Active Directory authenticates users and controls their access to network resources based on their permissions and group memberships. This helps prevent unauthorized access to sensitive data and resources.
+
+2. Group Policy Management: Active Directory allows administrators to define and enforce security policies across the network using Group Policy Objects (GPOs). This helps ensure consistent security settings and configurations on all network devices.
+
+3. Single Sign-On (SSO): Active Directory supports SSO, allowing users to log in once with their credentials and access multiple resources without having to re-enter their login information. This improves user convenience and reduces the risk of password-related security issues.
+
+4. Secure LDAP Communication: Active Directory uses Lightweight Directory Access Protocol (LDAP) for communication, which can be secured using encryption protocols such as SSL/TLS. This helps protect sensitive data transmitted between Active Directory components.
+
+5. Auditing and Logging: Active Directory provides auditing and logging capabilities to track user activities, changes to directory objects, and security-related events. This helps administrators monitor and investigate security incidents.
 
 
 First, I will create an Active Directory basic lab diagram. 
 
-Hyper-V: VirtualBox
+Hypervisor: VirtualBox
+A hypervisor, also known as a virtual machine monitor (VMM), allows you to create and run multiple virtual machines.The hypervisor abstracts the physical hardware resources of the host machine and allocates them to virtual machines, allowing each VM to operate independently as if it were running on its own dedicated hardware. I will be using VirtualBox as the hypervisor. Virtau
 
 Virtual Machine: Windows 10
 
@@ -24,7 +50,7 @@ Configured on the Domain Controller
 *Network Address Translation
 *Dynamic Host Configuration Protocol (DHCP) Server. Using 1 scope
 
-My Active Directory basic lab diagram screenshot https://imgur.com/6aZJan4
+My Active Directory basic lab diagram screenshot https://imgur.com/PDLy1mz
 
 
 
