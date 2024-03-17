@@ -43,17 +43,17 @@ Step 6: For Operating Systems, selected 'Windows Server 2022 Standard Evaluation
 
 Step 7: For installation type, selected 'Custom' > Selected the drive. Screenshot https://imgur.com/HnR1cla
 
-Step 8: Add a password as a Administrator > login as Administrator > Server Manager will load. https://imgur.com/DgmuBui, https://imgur.com/myoL87J
+Step 8: Add a password as a Administrator > login as Administrator > Server Manager will load. https://imgur.com/DgmuBui, https://imgur.com/myoL87J, https://imgur.com/zFZcsH6
 
 
 Windows 10 VM
 Already have Windows 10 VM in my Virtualox. Cloned the Windows 10 VM and named it 'Client 1 (Wins10)'
 
 
-DHCP and NAT
-Configured the DHCP/NAT in Windows Server.
+Setup IP dddressing
+Configured the settings in Windows Server.
 
-Step 1: 
+Step 1: In the Windows Server, click the network icon in the Taskbar and select
 Step 2: 
 Step 3: 
 
