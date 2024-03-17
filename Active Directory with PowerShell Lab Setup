@@ -10,6 +10,8 @@ Environments Used:
 
 First, I will create an Active Directory basic lab diagram. 
 
+My Active Directory basic lab diagram screenshot https://imgur.com/a4P7ekj
+
 Hypervisor: VirtualBox
 A hypervisor, also known as a virtual machine monitor (VMM), allows you to create and run multiple virtual machines.The hypervisor abstracts the physical hardware resources of the host machine and allocates them to virtual machines, allowing each VM to operate independently as if it were running on its own dedicated hardware. I will be using VirtualBox as the hypervisor. VirtualBox is a Type 2 (hosted) Hypervisor that run on top of a conventional operating system. 
 
@@ -21,13 +23,15 @@ A domain controller is a server that is running a version of the Windows Server 
 
 I will Configure.
 *Domain / Active Directory Domain Services (AD DS)
+
 *Network Address Translation
-*Dynamic Host Configuration Protocol (DHCP) Server. Using 1 scope
+NAT short from Network Address Translation, maps multiple private addresses inside a local network to a public IP address before transferring the information onto the internet.
 
-My Active Directory basic lab diagram screenshot https://imgur.com/PDLy1mz
+*Dynamic Host Configuration Protocol (DHCP) Server. Using 1 scope.
+DHCP is short from Dynamic Host Configuration Protocol. It's a network protocol used to automatically assign IP addresses and other network configuration settings to devices on a network. DHCP servers manage a pool of IP addresses and lease them to client devices for a specific period of time. DHCP also supports features such as IP address reservation, automatic DNS server assignment, and network booting for client devices.
 
 
-Install the Domain Controller (Windows Server 2022)
+Installed the Domain Controller (Windows Server 2022)
 
 Step 1: Downloaded the ISO from https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2022. Screenshot https://imgur.com/nUiVhML
 
@@ -50,7 +54,7 @@ Windows 10 VM
 Already have Windows 10 VM in my Virtualox. Cloned the Windows 10 VM and named it 'Client 1 (Wins10)'
 
 
-Configure DHCP and NAT.
+DHCP and NAT.
 Setup the DHCP and NAT in VirtualBox
 Step 1: In VirtualBox, Go to 'Tools' tab 
 
