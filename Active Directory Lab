@@ -7,3 +7,32 @@ Resources Used:
 Environments Used:
 -Windows Server in VirtualBox
 -Windows 10 VM in VirtualBox
+
+Started Windows Server VM.
+
+Configure local server.
+In the 'Quick Start', select 'Add roles and features'. 
+In the 'Add Roles and Features Wizard'
+'Before you begin': Clicked 'Next' 
+'Installation Type': Selected the option 'Role-based or feature-based installation' 
+'Server Selection': Should be the 1 computer that is found, clicked 'Next'
+'Server Roles': Selected 'Active Directory Domain Services', clicked 'Add Features', 'Next'
+'Features': It'll add .Net, clicked 'Next'
+'AD DS': Clicked 'Next'
+'Confirmation': Clicked 'Next'
+'Results': It'll install the features
+
+Screenshots: https://imgur.com/MI0doPx, https://imgur.com/TD5vsU1, 
+
+
+
+
+
+
+
+
+
+
+
+
+
