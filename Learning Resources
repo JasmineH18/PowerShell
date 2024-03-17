@@ -3,9 +3,10 @@ Below are the resources I've used and will use to learn pertaining to the PowerS
 -https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.4
 -https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
 -https://tryhackme.com/room/powershell
--PowerShell Engineer https://www.youtube.com/watch?v=ZOoCaWyifmI&list=PLmBNQq8ckUwsGrr1JAC8Iv14usVXMBLtp
--Josh Madakor https://www.youtube.com/watch?v=MHsI8hJmggI
--Chasse TAC https://www.youtube.com/watch?v=6HNbk9VylLc
+-PowerShell Engineer AD https://www.youtube.com/watch?v=ZOoCaWyifmI&list=PLmBNQq8ckUwsGrr1JAC8Iv14usVXMBLtp
+-Josh Madakor AD https://www.youtube.com/watch?v=MHsI8hJmggI
+-Chasse TAC PS GUI https://www.youtube.com/watch?v=6HNbk9VylLc
 -https://github.com/LaurentDardenne/ConvertForm
 -https://github.com/jimrtyler/MAEDS/tree/main/2023
 -https://visualstudio.microsoft.com/free-developer-offers/
+-https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps
