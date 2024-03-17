@@ -1,1 +1,72 @@
+The Active Directory module for Windows PowerShell is a PowerShell module that consolidates a group of cmdlets. You can use these cmdlets to manage your Active Directory domains, Active Directory Lightweight Directory Services (AD LDS) configuration sets, and Active Directory Database Mounting Tool instances in a single, self-contained package.
+
+You have to run the commands as Administrator.
+
+Load AD Cmdlets with Import-Module ActiveDirectory
+In the PowerShell Terminal:
+Import-Module ActiveDirectory
+
+
+Get user information with Get-ADUser
+In the PowerShell Terminal:
+Get-ADUser nfury
+
+You can set the user to a variable.
+In the PowerShell Terminal:
+$user = Get-ADUser nfury
+$user
+
+You can get the user values with the user variable.
+In the PowerShell Terminal:
+$user.DistinguishedName
+
+You can loop through a some users, you can get a collection of users. or you want to display different information
+In the PowerShell Terminal:
+$user.DistinguishedName | Out-File user.txt
+ls
+cat .\user.txt
+Ouput: You'll see the value for user.txt
+
+
+Change user information with Set-ADUser
+In the PowerShell Terminal:
+Set-ADUser -Identity nfury -SurName Fury
+Get-ADUser nfury
+Output: It will show the new surname of that user
+
+
+Add a user to a group with Add-ADGroupMember
+In the PowerShell Terminal:
+Add-ADGroupMember -Identity Marvel -Members nfury
+Username will appear in AD group name in the 'Members' tab.
+
+
+Remove a user from a group with Remove-ADGroupMember
+In the PowerShell Terminal:
+Remove-ADGroupMember -Identity Marvel -Members nfurry
+Confirm [Y] Yes
+Username will not appear in AD group name in the 'Members' tab.
+
+
+Turn on advanced features in Active Directory Users & Computers
+In the Active Directory:
+'View' tab > Select/Checkmark 'Advanced Features'
+Select a user name > Right click > Properties > Attribute Editor
+You'll be able to see individual attributes you can view and modify, such as user account information, group memberships, and security settings
+
+
+Add a new user with New-ADUser
+In the PowerShell Terminal:
+New-ADUser -Name "Natasha Romanoff" -GivenName "Natasha" -Surname "Romanoff" -SamAccountName "nromanoff" -UserPrincipalName "nromanoff@marvelhq.org" -Path "OU=Administration,OU=Staff,OU=MarvelHQ,DC=marvelhq,DC=org" -AccountPassword(ConvertTo-SecureString "Family4Forever21!" -AsPlainText -force) -Enabled $true
+
+You would see the created user in AD.
+
+
+Reset a password of a user
+In the PowerShell Terminal: 
+Set-ADAccountPassword -Identity nromanoff -Reset -NewPassword (ConvertTo-SecureString  -AsPlainText "Take*Down+Villians19!" -Force)
+
+
+
+
 
