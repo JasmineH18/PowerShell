@@ -30,12 +30,17 @@ Post-deployment configuration
 Clicked the flag symbol (Notifications) at the top > 'Promote this server to a domain controller'
 
 In the 'Active Directory Domain Services Configuration Wizard
-'Deployment Configuration': Select 'Add a new forest' > 'Root domain name: Marvel
+'Deployment Configuration': Select 'Add a new forest' > 'Root domain name: marvel.org > 'Next' 
+'Domain Controller Options': Typed a password > 'Next'
+'DNS Options': Clicked 'Next'
+'Additonal Options': It'll auto populate the 'NetBIOS domain name' > Clicked 'Next'
+'Paths': Clicked 'Next'
+'Review Options': Clicked 'Next'
+'Prerequisites Check': It'll validate the Prerequisites > Clicked 'Install'
+'Installation': It start the installation
+'Results': It'll prompt you to restart
 
-
-
-
-
+Screenshots: https://imgur.com/FCU7Vqc, https://imgur.com/O6SQvSz, https://imgur.com/KqeQZ61, https://imgur.com/JvIuzk6, https://imgur.com/csQYLq0, https://imgur.com/HziDJ37, https://imgur.com/N9k0peF, https://imgur.com/TLVJGAx, https://imgur.com/xDRSXFO,          
 
 
 
