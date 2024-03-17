@@ -2,10 +2,37 @@ Resources Used:
 -https://www.virtualbox.org/wiki/Downloads
 -https://www.microsoft.com/en-us/software-download/windows10
 -https://www.microsoft.com/en-us/windows-server
--Created a diagram of the lab in draw.io
+-Created an Active Directory basic lab diagram in draw.io
 
 Environments Used:
--Windows Server in Virtualbox
--Windows 10 VM in Virtualbox
+-Windows Server in VirtualBox
+-Windows 10 VM in VirtualBox
+
+Active Directory
+
+
+First, I will create an Active Directory basic lab diagram. 
+
+Hyper-V: VirtualBox
+
+Virtual Machine: Windows 10
+
+Domain Controller: Windows Server 10
+
+Configured on the Domain Controller
+*Domain / Active Directory Domain Services (AD DS)
+*Network Address Translation
+*Dynamic Host Configuration Protocol (DHCP) Server. Using 1 scope
+
+My Active Directory basic lab diagram screenshot https://imgur.com/6aZJan4
+
+
+
+
+
+
+
+
+
 
 
