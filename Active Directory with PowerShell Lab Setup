@@ -50,11 +50,27 @@ Windows 10 VM
 Already have Windows 10 VM in my Virtualox. Cloned the Windows 10 VM and named it 'Client 1 (Wins10)'
 
 
+Configure DHCP and NAT.
+Setup the DHCP and NAT in VirtualBox
+Step 1: In VirtualBox, Go to 'Tools' tab 
+
+Step 2: 'NAT Networks' tab
+
+Step 3: In 'General Options', named it 'NatNetwork1', added an IPv4 Prefix , and select 'Enable DHCP'
+
+Step 4: Go to WindowsServer and Client 1 settings > 'Network' tab 
+
+Step 5: In Adapter 1, select 'Attached to: Nat Network' and 'Name: NatNetwork1'. Screenshot https://imgur.com/SzM7oGH
+
+Step 6: Started Windows Server > Login > Selected 'Yes' for Network 2 to discovered
+
+
 Setup IP dddressing
 Configured the settings in Windows Server.
+Step 1: In the Windows Server, click the network icon in the Taskbar and select 'Network & Internet Settings'. Screenshot https://imgur.com/970S01x
 
-Step 1: In the Windows Server, click the network icon in the Taskbar and select
 Step 2: 
+
 Step 3: 
 
 
