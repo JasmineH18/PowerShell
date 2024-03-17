@@ -27,22 +27,21 @@ I will Configure.
 My Active Directory basic lab diagram screenshot https://imgur.com/PDLy1mz
 
 
-Remeber to add screenshots!!
 Install the Domain Controller (Windows Server 2022)
 
-Step 1: Downloaded the ISO from https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2022
+Step 1: Downloaded the ISO from https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2022. Screenshot https://imgur.com/nUiVhML
 
-Step 2: Registered for the free trial
+Step 2: Registered for the free trial. Screenshot https://imgur.com/Fqakum1
 
-Step 3: Selected the English ISO download 64-bit edition
+Step 3: Selected the English ISO download 64-bit edition. Screenshot https://imgur.com/mKBFZ7U
 
-Step 4: Added the ISO to VirtualBox > Named it 'DC Windows Server 2022' > Go to 'DC Windows Server 2022' settings > 'Storage' > Select the disk drive > 'Optical Drive' > 'Choose a disk file' > Chose the ISO file
+Step 4: Add the Windows Server ISO to VirtualBox > Named it 'WindowsServer2022' > Adjusted settings. Screenshot https://imgur.com/yNWd6dj
 
-Step 5: Start the 'DC Windows Server 2022' > Follow the prompts (Clicked 'Install Now')
+Step 5: Started the 'WindowsServer2022' > Follow the prompts (Clicked 'Install Now'). Screenshot https://imgur.com/0UOCuAu
 
-Step 6: For Operating Systems, selected 'Windows Server 2022 Standard Evaluation (Desktop Experience)
+Step 6: For Operating Systems, selected 'Windows Server 2022 Standard Evaluation (Desktop Experience). Screenshot https://imgur.com/4Ss2Cya
 
-Step 7: For installation type, selected 'Custom' > Selected the drive
+Step 7: For installation type, selected 'Custom' > Selected the drive. Screenshot https://imgur.com/HnR1cla
 
 Step 8: Add a password as a Administrator > login as Administrator > Server Manager will load
 
