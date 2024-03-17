@@ -1,1 +1,9 @@
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://www.microsoft.com/en-us/software-download/windows10
+-https://www.microsoft.com/en-us/windows-server
+-https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps
 
+Environments Used:
+-Windows Server in VirtualBox
+-Windows 10 VM in VirtualBox
