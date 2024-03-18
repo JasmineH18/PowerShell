@@ -40,7 +40,16 @@ In the 'Active Directory Domain Services Configuration Wizard
 'Installation': It start the installation
 'Results': It'll prompt you to restart
 
-Screenshots: https://imgur.com/FCU7Vqc, https://imgur.com/O6SQvSz, https://imgur.com/KqeQZ61, https://imgur.com/JvIuzk6, https://imgur.com/csQYLq0, https://imgur.com/HziDJ37, https://imgur.com/N9k0peF, https://imgur.com/TLVJGAx, https://imgur.com/xDRSXFO,          
+Screenshots: https://imgur.com/FCU7Vqc, https://imgur.com/O6SQvSz, https://imgur.com/KqeQZ61, https://imgur.com/JvIuzk6, https://imgur.com/csQYLq0, https://imgur.com/HziDJ37, https://imgur.com/N9k0peF, https://imgur.com/TLVJGAx, https://imgur.com/xDRSXFO, https://imgur.com/CDzSBXf         
+
+At the login screen, you'll see the domain 'MARVEL' I'll logged onto. Screenshot: https://imgur.com/9UUlby9
+
+
+Opened 'Active Directory Users and Computers' from the Start menu. Pinned it to the taskbar. Clicked the dropdown on marvel.org. It'll show some OU's built in automatically. The domain controller is complete.  
+
+Screenshots: https://imgur.com/JWE1H1r, https://imgur.com/qb8JAFQ
+
+PowerShell
 
 
 
