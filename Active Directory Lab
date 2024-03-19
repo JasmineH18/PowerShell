@@ -49,7 +49,63 @@ Opened 'Active Directory Users and Computers' from the Start menu. Pinned it to 
 
 Screenshots: https://imgur.com/JWE1H1r, https://imgur.com/qb8JAFQ
 
-Will start using PowerShell next
+
+Opened PowerShell as Administrator from the Start menu.
+
+Import Active Directory commands.
+
+In the terminal:
+Import-Module ActiveDirectory
+Get-Command -Module ActiveDirectory
+
+Import-Module ActiveDirectory: This is to import the Active Directory module, which provides cmdlets for managing Active Directory objects and services. Creating, modifying, and deleting objects like users, groups, and computers.
+
+Get-Command -Module ActiveDirectory: This will list of all the cmdlets available in the Active Directory module
+
+Screenshot: https://imgur.com/CVpP4Ji
+
+
+OU's short from Organizational Units, are containers within an Active Directory domain that are used to organize and manage objects such as users, groups, computers, and other resources. OUs provide a way to structure and group objects based on administrative, geographical, or departmental criteria, allowing for easier management and delegation of administrative tasks within the domain. OUs can have Group Policy Objects (GPOs) linked to them to apply specific settings and configurations to the objects within the OU.
+
+In the terminal:
+New-ADOrganizationalUnit -Name "MCU" -Path "DC=marvel, DC=org"
+
+In Active Directory, right clicked and clicked 'Refresh'. It'll show the OU I created, which is 'MCU'.
+
+Screenshots: https://imgur.com/iYt2T3C, https://imgur.com/WuNZXv4
+
+
+Create an OU for 'Staff'
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Staff" -Path "OU=MCU, DC=marvel, DC=org"
+
+Screenshots: https://imgur.com/biLYKZD, https://imgur.com/9NsapGN
+
+
+Create an OU for 'Superheroes'
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Superheroes" -Path "OU=MCU, DC=marvel, DC=org"
+
+Screenshots: https://imgur.com/1Cyl7Nw, https://imgur.com/2O13LDV
+
+
+Create an OU for 'Villains'
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Villains" -Path "OU=MCU, DC=marvel, DC=org"
+
+Screenshots: https://imgur.com/lp9dB8z, https://imgur.com/GsSAu3Y
+
+
+
+
+
+Marvel Cinematic Universe
+
+
+
 
 
 
