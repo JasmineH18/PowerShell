@@ -74,29 +74,47 @@ In Active Directory, right clicked and clicked 'Refresh'. It'll show the OU I cr
 
 Screenshots: https://imgur.com/iYt2T3C, https://imgur.com/WuNZXv4
 
-
-Create an OU for 'Staff'
+Create an OU for 'Staff'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Staff" -Path "OU=MCU, DC=marvel, DC=org"
 
 Screenshots: https://imgur.com/biLYKZD, https://imgur.com/9NsapGN
 
-
-Create an OU for 'Superheroes'
+Create an OU for 'Superheroes'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Superheroes" -Path "OU=MCU, DC=marvel, DC=org"
 
 Screenshots: https://imgur.com/1Cyl7Nw, https://imgur.com/2O13LDV
 
-
-Create an OU for 'Villains'
+Create an OU for 'Villains'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Villains" -Path "OU=MCU, DC=marvel, DC=org"
 
 Screenshots: https://imgur.com/lp9dB8z, https://imgur.com/GsSAu3Y
+
+
+Create OU's in 'Superheroes'. Screenshot https://imgur.com/2vca1EX, AD Screenshot https://imgur.com/cnp9yiz
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Black Widow" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Thor" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Scarlet Witch" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Deadpool" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Captain Marvel" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
+
+
+
 
 
 
