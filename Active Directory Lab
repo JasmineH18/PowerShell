@@ -96,7 +96,7 @@ New-ADOrganizationalUnit -Name "Villains" -Path "OU=MCU, DC=marvel, DC=org"
 Screenshots: https://imgur.com/lp9dB8z, https://imgur.com/GsSAu3Y
 
 
-Create OU's in 'Superheroes'. Screenshot https://imgur.com/2vca1EX, AD Screenshot https://imgur.com/cnp9yiz
+Create OU's in 'Superheroes'. PS Screenshot https://imgur.com/2vca1EX, AD Screenshot https://imgur.com/cnp9yiz
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Black Widow" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
@@ -114,8 +114,22 @@ In the terminal:
 New-ADOrganizationalUnit -Name "Captain Marvel" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
 
 
+Create OU's in 'Villains'. PS ScreenShot https://imgur.com/x4ViQLe, AD Screenshot https://imgur.com/P8VmX7u
 
+In the terminal:
+New-ADOrganizationalUnit -Name "Thanos" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
 
+In the terminal:
+New-ADOrganizationalUnit -Name "Red Skull" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Green Goblin" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Kang" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
+
+In the terminal:
+New-ADOrganizationalUnit -Name "Doctor Doom" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
 
 
 
