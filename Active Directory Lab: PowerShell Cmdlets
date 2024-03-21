@@ -16,7 +16,7 @@ New-ADOrganizationalUnit: This is the cmdlet used to create a new Organizational
 -Path 'DC=marvel, DC=org': This parameter specifies the path where the new OU will be created. In this example, the OU will be created under the 'marvel.org' domain.
 
 Example 2: 
-New-ADUSer -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipleName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true?
+New-ADUser -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipalName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true?
 
 New-ADUser: This is the cmdlet used to create a new user account in Active Directory.
 -Name 'Natasha Romanoff': This parameter specifies the display name of the new user, which in this case is 'Natasha Romanoff'.
