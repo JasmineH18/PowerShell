@@ -5,18 +5,31 @@ You have to run the commands as Administrator.
 Import-Module ActiveDirectory:
 Load AD Cmdlets with Import-Module ActiveDirectory
 
+Get-Command -Module ActiveDirectory: 
+This will list of all the cmdlets available in the Active Directory module
 
-New-ADOrganizationalUnit:
-Creates an Active Directory organizational unit.
+Example 1:
+New-ADOrganizationalUnit -Name "MCU" -Path "DC=marvel, DC=org"
 
+New-ADOrganizationalUnit: This is the cmdlet used to create a new Organizational Unit in Active Directory.
+-Name 'MCU': This parameter specifies the name of the new OU, which in this case is 'MCU'.
+-Path 'DC=marvel, DC=org': This parameter specifies the path where the new OU will be created. In this example, the OU will be created under the 'marvel.org' domain.
 
--Name:
-Is a parameter commonly used in cmdlets to specify the name of an object or resource
+Example 2: 
+New-ADUSer -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipleName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true?
 
+New-ADUser: This is the cmdlet used to create a new user account in Active Directory.
+-Name 'Natasha Romanoff': This parameter specifies the display name of the new user, which in this case is 'Natasha Romanoff'.
+-SamAccountName 'nromanoff': This parameter specifies the SamAccountName for the user, which is a unique identifier for the user account.
+-UserPrincipalName 'nromanoff@marvel.org': This parameter specifies the User Principal Name (UPN) for the user, which is used for user logins.
+-Path 'OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org': This parameter specifies the Organizational Unit (OU) path where the new user account will be created.
+-AccountPassword (ConvertTo-SecureString 'M@rv3l$ecrt$19!' -AsPlainText -Force): This parameter sets the password for the new user account. The password is converted to a secure string using the ConvertTo-SecureString cmdlet.
+-Enabled $true: This parameter specifies that the user account should be enabled (active).
 
 Get-ADUser:
 Get user information with Get-ADUser
-Example: Get-ADUser nfury
+In the PowerShell Terminal:
+Get-ADUser nfury
 
 You can set the user to a variable.
 In the PowerShell Terminal:
