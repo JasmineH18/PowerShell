@@ -132,6 +132,26 @@ In the terminal:
 New-ADOrganizationalUnit -Name "Doctor Doom" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
 
 
+Create Active Directory users
+
+If needed, using the command 'Get-Help New-ADUser' will provide details about the syntax, parameters, and examples of how to use the New-ADUser cmdlet effectively.
+
+ADD SCREENSHOTS!!
+Create users in 'Black Widow'
+In the terminal:
+New-ADUSer -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipleName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Yelena Belova" -SamAccountName "ybelova" -UserPrincipleName "ybelova@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Ivan Romanoff" -SamAccountName "iromanoff" -UserPrincipleName "iromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+Create users in 'Thor'
+In the terminal:
+New-ADUSer -Name "Thor Odinson" -SamAccountName "todinson" -UserPrincipleName "todinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Odin Borson" -SamAccountName "oborson" -UserPrincipleName "oborson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Loki Odinson" -SamAccountName "lodinson" -UserPrincipleName "lodinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 
 
