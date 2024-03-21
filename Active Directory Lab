@@ -153,6 +153,29 @@ New-ADUSer -Name "Odin Borson" -SamAccountName "oborson" -UserPrincipleName "obo
 
 New-ADUSer -Name "Loki Odinson" -SamAccountName "lodinson" -UserPrincipleName "lodinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
+Create users in 'Scarlet Witch'
+In the terminal: 
+New-ADUSer -Name "Wanda Maximoff" -SamAccountName "wmaximoff" -UserPrincipleName "wmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Tommy Maximoff" -SamAccountName "tmaximoff" -UserPrincipleName "tmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Billy Maximoff" -SamAccountName "bmaximoff" -UserPrincipleName "bmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+Create users in 'Deadpool'
+In the terminal:
+New-ADUSer -Name "Wade Wilson" -SamAccountName "wwilson" -UserPrincipleName "wwilson@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Vanessa Carlysle" -SamAccountName "vcarlysle" -UserPrincipleName "vcarlysle@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Jack Hammer" -SamAccountName "jhammer" -UserPrincipleName "jhammer@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+Create users in 'Captain Marvel'
+In the terminal: 
+New-ADUSer -Name "Carol Danvers" -SamAccountName "cdanvers" -UserPrincipleName "cdanvers@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Maria Rambeau" -SamAccountName "mrambeau" -UserPrincipleName "mrambeau@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+New-ADUSer -Name "Goose" -SamAccountName "goose" -UserPrincipleName "goose@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 
 
