@@ -2,14 +2,21 @@ The Active Directory module for Windows PowerShell is a PowerShell module that c
 
 You have to run the commands as Administrator.
 
+Import-Module ActiveDirectory:
 Load AD Cmdlets with Import-Module ActiveDirectory
-In the PowerShell Terminal:
-Import-Module ActiveDirectory
 
 
+New-ADOrganizationalUnit:
+Creates an Active Directory organizational unit.
+
+
+-Name:
+Is a parameter commonly used in cmdlets to specify the name of an object or resource
+
+
+Get-ADUser:
 Get user information with Get-ADUser
-In the PowerShell Terminal:
-Get-ADUser nfury
+Example: Get-ADUser nfury
 
 You can set the user to a variable.
 In the PowerShell Terminal:
