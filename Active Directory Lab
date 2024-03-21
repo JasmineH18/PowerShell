@@ -139,43 +139,43 @@ If needed, using the command 'Get-Help New-ADUser' will provide details about th
 ADD SCREENSHOTS!!
 Create users in 'Black Widow'
 In the terminal:
-New-ADUSer -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipleName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipalName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Yelena Belova" -SamAccountName "ybelova" -UserPrincipleName "ybelova@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Yelena Belova" -SamAccountName "ybelova" -UserPrincipalName "ybelova@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Ivan Romanoff" -SamAccountName "iromanoff" -UserPrincipleName "iromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Ivan Romanoff" -SamAccountName "iromanoff" -UserPrincipalName "iromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 Create users in 'Thor'
 In the terminal:
-New-ADUSer -Name "Thor Odinson" -SamAccountName "todinson" -UserPrincipleName "todinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Thor Odinson" -SamAccountName "todinson" -UserPrincipalName "todinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Odin Borson" -SamAccountName "oborson" -UserPrincipleName "oborson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Odin Borson" -SamAccountName "oborson" -UserPrincipalName "oborson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Loki Odinson" -SamAccountName "lodinson" -UserPrincipleName "lodinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Loki Odinson" -SamAccountName "lodinson" -UserPrincipalName "lodinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 Create users in 'Scarlet Witch'
 In the terminal: 
-New-ADUSer -Name "Wanda Maximoff" -SamAccountName "wmaximoff" -UserPrincipleName "wmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Wanda Maximoff" -SamAccountName "wmaximoff" -UserPrincipalName "wmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Tommy Maximoff" -SamAccountName "tmaximoff" -UserPrincipleName "tmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Tommy Maximoff" -SamAccountName "tmaximoff" -UserPrincipalName "tmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Billy Maximoff" -SamAccountName "bmaximoff" -UserPrincipleName "bmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Billy Maximoff" -SamAccountName "bmaximoff" -UserPrincipalName "bmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 Create users in 'Deadpool'
 In the terminal:
-New-ADUSer -Name "Wade Wilson" -SamAccountName "wwilson" -UserPrincipleName "wwilson@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Wade Wilson" -SamAccountName "wwilson" -UserPrincipalName "wwilson@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Vanessa Carlysle" -SamAccountName "vcarlysle" -UserPrincipleName "vcarlysle@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Vanessa Carlysle" -SamAccountName "vcarlysle" -UserPrincipalName "vcarlysle@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Jack Hammer" -SamAccountName "jhammer" -UserPrincipleName "jhammer@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Jack Hammer" -SamAccountName "jhammer" -UserPrincipalName "jhammer@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 Create users in 'Captain Marvel'
 In the terminal: 
-New-ADUSer -Name "Carol Danvers" -SamAccountName "cdanvers" -UserPrincipleName "cdanvers@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Carol Danvers" -SamAccountName "cdanvers" -UserPrincipalName "cdanvers@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Maria Rambeau" -SamAccountName "mrambeau" -UserPrincipleName "mrambeau@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Maria Rambeau" -SamAccountName "mrambeau" -UserPrincipalName "mrambeau@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-New-ADUSer -Name "Goose" -SamAccountName "goose" -UserPrincipleName "goose@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+New-ADUser -Name "Goose" -SamAccountName "goose" -UserPrincipalName "goose@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 
 
