@@ -183,14 +183,17 @@ New-ADUser -Name "Maria Rambeau" -SamAccountName "mrambeau" -UserPrincipalName "
 New-ADUser -Name "Goose" -SamAccountName "goose" -UserPrincipalName "goose@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 
+Viewing the AD Users properties. Screenshot https://imgur.com/5YxFtWr
+
+Double click the user name and you'll see 'Account', 'General', 'Organization', and other properties.
 
 
+Enabled advanced features in AD Users & Computers. Screenshots https://imgur.com/M0Mma8b, https://imgur.com/W6TphBt
+
+Go to 'View' tab > Select 'Advanced Features' > Double clicked a User name > 'Attribute Editor' tab
 
 
-
-
-
-
+Get user information with Get-ADUser
 
 
 
