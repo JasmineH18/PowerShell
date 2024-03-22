@@ -74,21 +74,21 @@ In Active Directory, right clicked and clicked 'Refresh'. It'll show the OU I cr
 
 Screenshots: https://imgur.com/iYt2T3C, https://imgur.com/WuNZXv4
 
-Create an OU for 'Staff'.
+Created an OU for 'Staff'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Staff" -Path "OU=MCU, DC=marvel, DC=org"
 
 Screenshots: https://imgur.com/biLYKZD, https://imgur.com/9NsapGN
 
-Create an OU for 'Superheroes'.
+Created an OU for 'Superheroes'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Superheroes" -Path "OU=MCU, DC=marvel, DC=org"
 
 Screenshots: https://imgur.com/1Cyl7Nw, https://imgur.com/2O13LDV
 
-Create an OU for 'Villains'.
+Created an OU for 'Villains'.
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Villains" -Path "OU=MCU, DC=marvel, DC=org"
@@ -96,7 +96,7 @@ New-ADOrganizationalUnit -Name "Villains" -Path "OU=MCU, DC=marvel, DC=org"
 Screenshots: https://imgur.com/lp9dB8z, https://imgur.com/GsSAu3Y
 
 
-Create OU's in 'Superheroes'. PS Screenshot https://imgur.com/2vca1EX, AD Screenshot https://imgur.com/cnp9yiz
+Created OU's in 'Superheroes'. PS Screenshot https://imgur.com/2vca1EX, AD Screenshot https://imgur.com/cnp9yiz
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Black Widow" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
@@ -114,7 +114,7 @@ In the terminal:
 New-ADOrganizationalUnit -Name "Captain Marvel" -Path "OU=Superheroes, OU=MCU, DC=marvel, DC=org"
 
 
-Create OU's in 'Villains'. PS ScreenShot https://imgur.com/x4ViQLe, AD Screenshot https://imgur.com/P8VmX7u
+Created OU's in 'Villains'. PS ScreenShot https://imgur.com/x4ViQLe, AD Screenshot https://imgur.com/P8VmX7u
 
 In the terminal:
 New-ADOrganizationalUnit -Name "Thanos" -Path "OU=Villains, OU=MCU, DC=marvel, DC=org"
@@ -137,7 +137,8 @@ Create Active Directory users
 If needed, using the command 'Get-Help New-ADUser' will provide details about the syntax, parameters, and examples of how to use the New-ADUser cmdlet effectively.
 
 ADD SCREENSHOTS!!
-Create users in 'Black Widow'
+Created users in 'Black Widow'. PS Screenshot https://imgur.com/NLLzMqy, AD Screenshot https://imgur.com/4XyFtKT
+
 In the terminal:
 New-ADUser -Name "Natasha Romanoff" -SamAccountName "nromanoff" -UserPrincipalName "nromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
@@ -145,7 +146,8 @@ New-ADUser -Name "Yelena Belova" -SamAccountName "ybelova" -UserPrincipalName "y
 
 New-ADUser -Name "Ivan Romanoff" -SamAccountName "iromanoff" -UserPrincipalName "iromanoff@marvel.org" -Path "OU=Black Widow, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-Create users in 'Thor'
+Create users in 'Thor'. PS Screenshot https://imgur.com/4mj7phb, AD Screenshot https://imgur.com/lNhxldk
+
 In the terminal:
 New-ADUser -Name "Thor Odinson" -SamAccountName "todinson" -UserPrincipalName "todinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
@@ -153,7 +155,8 @@ New-ADUser -Name "Odin Borson" -SamAccountName "oborson" -UserPrincipalName "obo
 
 New-ADUser -Name "Loki Odinson" -SamAccountName "lodinson" -UserPrincipalName "lodinson@marvel.org" -Path "OU=Thor, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-Create users in 'Scarlet Witch'
+Create users in 'Scarlet Witch'. PS Screenshot https://imgur.com/qcE0AYf, AD Screenshot https://imgur.com/UibR1W3
+
 In the terminal: 
 New-ADUser -Name "Wanda Maximoff" -SamAccountName "wmaximoff" -UserPrincipalName "wmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
@@ -161,7 +164,8 @@ New-ADUser -Name "Tommy Maximoff" -SamAccountName "tmaximoff" -UserPrincipalName
 
 New-ADUser -Name "Billy Maximoff" -SamAccountName "bmaximoff" -UserPrincipalName "bmaximoff@marvel.org" -Path "OU=Scarlet Witch, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-Create users in 'Deadpool'
+Create users in 'Deadpool'. PS Screenshot https://imgur.com/tjdAghN, AD Screenshot https://imgur.com/I2gIVRF
+
 In the terminal:
 New-ADUser -Name "Wade Wilson" -SamAccountName "wwilson" -UserPrincipalName "wwilson@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
@@ -169,13 +173,26 @@ New-ADUser -Name "Vanessa Carlysle" -SamAccountName "vcarlysle" -UserPrincipalNa
 
 New-ADUser -Name "Jack Hammer" -SamAccountName "jhammer" -UserPrincipalName "jhammer@marvel.org" -Path "OU=Deadpool, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
-Create users in 'Captain Marvel'
+Create users in 'Captain Marvel'. PS Screenshot https://imgur.com/bAUNAux, AD Screenshot https://imgur.com/U0VHN1m
+
 In the terminal: 
 New-ADUser -Name "Carol Danvers" -SamAccountName "cdanvers" -UserPrincipalName "cdanvers@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 New-ADUser -Name "Maria Rambeau" -SamAccountName "mrambeau" -UserPrincipalName "mrambeau@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
 
 New-ADUser -Name "Goose" -SamAccountName "goose" -UserPrincipalName "goose@marvel.org" -Path "OU=Captain Marvel, OU=Superheroes, OU=MCU, DC=Marvel, DC=org" -AccountPassword (ConvertTo-SecureString "M@rv3l$ecrt$19!" -AsPlainText -force) -Enabled $true
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
