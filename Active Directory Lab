@@ -195,6 +195,83 @@ Go to 'View' tab > Select 'Advanced Features' > Double clicked a User name > 'At
 
 Get user information with Get-ADUser
 
+In the terminal:
+Get-ADUser -Identity “wmaximoff”
+
+Information shown for the user: DistinguishedName, Enabled, GivenName, Name, ObjectClass, ObjectGUID, SamAccountName, SID, Surname, UserPrincipalName
+
+Screenshot: https://imgur.com/uydKFGY
+
+
+To get all enabled (active) users
+
+In the terminal:
+Get-ADUser -filter ‘Enabled -eq $true’
+
+Screenshot: https://imgur.com/sg1gzZO
+
+
+Setting a variable to a user
+
+In the terminal:
+$ADUser = Get-ADUser -Identity “wmaximoff”
+$ADUser
+
+Screenshot: https://imgur.com/755P9MA
+
+
+To look at some properties. 
+
+Example 1
+In the terminal:
+$ADUser.UserPrincipalName
+
+Output:
+wmaximoff@marvel.org
+
+Screenshot: https://imgur.com/0Udxv9R
+
+Example 2
+In the terminal:
+$ADUser.Enabled
+
+Output:
+True
+
+Screenshot: https://imgur.com/fcTmNDl
+
+
+View specific properties.
+
+Example 1
+In the terminal:
+Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
+
+Screenshot: https://imgur.com/hm3dDLk
+
+Example 2
+In the terminal:
+$ADUser = Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
+$ADUser
+
+Screenshot: https://imgur.com/SOgBsSv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
