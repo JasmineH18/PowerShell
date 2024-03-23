@@ -3,10 +3,12 @@ The Active Directory module for Windows PowerShell is a PowerShell module that c
 You have to run the commands as Administrator.
 
 Import-Module ActiveDirectory:
-Load AD Cmdlets with Import-Module ActiveDirectory
+This command will load AD Cmdlets with Import-Module ActiveDirectory
+
 
 Get-Command -Module ActiveDirectory: 
-This will list of all the cmdlets available in the Active Directory module
+This command will list of all the cmdlets available in the Active Directory module
+
 
 Example 1:
 New-ADOrganizationalUnit -Name "MCU" -Path "DC=marvel, DC=org"
@@ -26,21 +28,69 @@ New-ADUser: This is the cmdlet used to create a new user account in Active Direc
 -AccountPassword (ConvertTo-SecureString 'M@rv3l$ecrt$19!' -AsPlainText -Force): This parameter sets the password for the new user account. The password is converted to a secure string using the ConvertTo-SecureString cmdlet.
 -Enabled $true: This parameter specifies that the user account should be enabled (active).
 
+
 Get-ADUser:
 Get user information with Get-ADUser
 In the PowerShell Terminal:
 Get-ADUser nfury
+
+This command will return details such as the user's name, email address, group memberships, and other attributes stored in the Active Directory for the user "nfury".
+
 
 You can set the user to a variable.
 In the PowerShell Terminal:
 $user = Get-ADUser nfury
 $user
 
+-The $user variable is being assigned the result of the Get-ADUser cmdlet with the parameter 'nfury'.
+-The Get-ADUser cmdlet is used to retrieve information about Active Directory users.
+-By specifying 'nfury' after Get-ADUser, the command is requesting information about the user with the username 'nfury' from the Active Directory.
+-The information about the user 'nfury' will be stored in the $user variable for further processing or manipulation in the PowerShell script.
+
+
 You can get the user values with the user variable.
 In the PowerShell Terminal:
 $user.DistinguishedName
 
-You can loop through a some users, you can get a collection of users. or you want to display different information
+-$user.DistinguishedName refers to the Distinguished Name property of the user object stored in the variable $user.
+-The Distinguished Name is a unique identifier for the user object within the Active Directory hierarchy.
+-It provides the full path to the user object, including the organizational units (OUs) and domain components (DCs) that the user belongs to.
+-The Distinguished Name is commonly used to uniquely identify and locate user objects within the Active Directory structure.
+
+
+Check user variable is enabled
+$user.Enabled
+
+-The syntax $user.Enabled is used to access the "Enabled" property of the object stored in the variable $user.
+-This property typically represents the account status of a user in Active Directory, indicating whether the user account is currently enabled or disabled.
+-When you use $user.Enabled, you are retrieving the value of the "Enabled" property for the user object stored in the variable $user.
+-The value returned will be a boolean (true or false) indicating whether the user account is enabled (true) or disabled (false).
+
+
+View specific properties.
+
+Example 1
+In the PowerShell terminal:
+Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
+
+- The command Get-ADUser is used to retrieve information about an Active Directory user.
+- The -Identity parameter specifies the user "wmaximoff" whose information will be retrieved.
+- The pipe symbol "|" is used to pass the output of the Get-ADUser command to the Select-Object cmdlet.
+- In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
+- Select-Object is used to choose specific properties of the user object to display.
+
+Example 1
+In the PowerShell terminal:
+$ADUser = Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
+
+- The variable $ADUser is being assigned the result of the Get-ADUser cmdlet with the Identity parameter set to "wmaximoff".
+- The pipe symbol "|" is used to pass the output of the Get-ADUser cmdlet to the Select-Object cmdlet.
+- The Select-Object cmdlet is used to choose specific properties of the user object to display.
+- In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
+- The variable $ADUser will now contain the selected properties of the user "wmaximoff" retrieved from Active Directory.
+
+
+You can loop through a some users, can get a collection of users, or you want to display different information
 In the PowerShell Terminal:
 $user.DistinguishedName | Out-File user.txt
 ls
@@ -87,6 +137,10 @@ In the PowerShell Terminal:
 Set-ADAccountPassword -Identity nromanoff -Reset -NewPassword (ConvertTo-SecureString  -AsPlainText "Take*Down+Villians19!" -Force)
 
 
+To get all enabled (active) users
+In the PowerShell Terminal:
+Get-ADUser -filter ‘Enabled -eq $true’
 
-
-
+-The Get-ADUser cmdlet is used in PowerShell to retrieve information about Active Directory users.
+-The filter parameter allows you to specify criteria for filtering the user objects to be returned.
+-The filter 'Enabled -eq $true' is used to only retrieve user objects that are currently enabled in Active Directory.
