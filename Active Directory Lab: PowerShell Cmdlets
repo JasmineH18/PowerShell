@@ -13,7 +13,7 @@ This command will list of all the cmdlets available in the Active Directory modu
 Example 1:
 New-ADOrganizationalUnit -Name "MCU" -Path "DC=marvel, DC=org"
 
-New-ADOrganizationalUnit: This is the cmdlet used to create a new Organizational Unit in Active Directory.
+-New-ADOrganizationalUnit: This is the cmdlet used to create a new Organizational Unit in Active Directory.
 -Name 'MCU': This parameter specifies the name of the new OU, which in this case is 'MCU'.
 -Path 'DC=marvel, DC=org': This parameter specifies the path where the new OU will be created. In this example, the OU will be created under the 'marvel.org' domain.
 
@@ -58,7 +58,7 @@ $user.DistinguishedName
 -The Distinguished Name is commonly used to uniquely identify and locate user objects within the Active Directory structure.
 
 
-Check user variable is enabled
+Check user variable is enabled.
 $user.Enabled
 
 -The syntax $user.Enabled is used to access the "Enabled" property of the object stored in the variable $user.
@@ -73,21 +73,21 @@ Example 1
 In the PowerShell terminal:
 Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
 
-- The command Get-ADUser is used to retrieve information about an Active Directory user.
-- The -Identity parameter specifies the user "wmaximoff" whose information will be retrieved.
-- The pipe symbol "|" is used to pass the output of the Get-ADUser command to the Select-Object cmdlet.
-- In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
-- Select-Object is used to choose specific properties of the user object to display.
+-The command Get-ADUser is used to retrieve information about an Active Directory user.
+-The -Identity parameter specifies the user "wmaximoff" whose information will be retrieved.
+-The pipe symbol "|" is used to pass the output of the Get-ADUser command to the Select-Object cmdlet.
+-In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
+-Select-Object is used to choose specific properties of the user object to display.
 
 Example 1
 In the PowerShell terminal:
 $ADUser = Get-ADUser -Identity “wmaximoff" | Select-Object Name,SamAccountName,UserPrincipalName
 
-- The variable $ADUser is being assigned the result of the Get-ADUser cmdlet with the Identity parameter set to "wmaximoff".
-- The pipe symbol "|" is used to pass the output of the Get-ADUser cmdlet to the Select-Object cmdlet.
-- The Select-Object cmdlet is used to choose specific properties of the user object to display.
-- In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
-- The variable $ADUser will now contain the selected properties of the user "wmaximoff" retrieved from Active Directory.
+-The variable $ADUser is being assigned the result of the Get-ADUser cmdlet with the Identity parameter set to "wmaximoff".
+-The pipe symbol "|" is used to pass the output of the Get-ADUser cmdlet to the Select-Object cmdlet.
+-The Select-Object cmdlet is used to choose specific properties of the user object to display.
+-In this case, the properties Name, SamAccountName, and UserPrincipalName are selected for the user with the identity "wmaximoff".
+-The variable $ADUser will now contain the selected properties of the user "wmaximoff" retrieved from Active Directory.
 
 
 You can loop through a some users, can get a collection of users, or you want to display different information
@@ -97,12 +97,21 @@ ls
 cat .\user.txt
 Ouput: You'll see the value for user.txt
 
+-The variable $user represents the user object whose Distinguished Name is being accessed.
+-The Distinguished Name is a unique identifier for the user object within Active Directory.
+-The "|" symbol is used to pass the output of the Distinguished Name to the Out-File cmdlet.
+-The Out-File cmdlet is used to write the output to a text file named "user.txt" in the current directory.
+
 
 Change user information with Set-ADUser
 In the PowerShell Terminal:
 Set-ADUser -Identity nfury -SurName Fury
 Get-ADUser nfury
 Output: It will show the new surname of that user
+
+- The Set-ADUser cmdlet in PowerShell is used to modify attributes of an Active Directory user.
+- In the command "Set-ADUser -Identity nfury -SurName Fury", the surname (last name) of the user with the identity "nfury" will be changed to "Fury".
+- This command will update the surname attribute of the user "nfury" in Active Directory to reflect the new value "Fury".
 
 
 Add a user to a group with Add-ADGroupMember
@@ -144,3 +153,16 @@ Get-ADUser -filter ‘Enabled -eq $true’
 -The Get-ADUser cmdlet is used in PowerShell to retrieve information about Active Directory users.
 -The filter parameter allows you to specify criteria for filtering the user objects to be returned.
 -The filter 'Enabled -eq $true' is used to only retrieve user objects that are currently enabled in Active Directory.
+
+
+Enabled or disabled a user with Set-ADUser.
+In the terminal:
+Set-ADUser -Identity “wmaximoff” -Enabled:$false
+
+-The Set-ADUser cmdlet in PowerShell is used to modify properties of an Active Directory user.
+-In the command "Set-ADUser -Identity 'wmaximoff' -Enabled:$false", the user with the username 'wmaximoff' will have their account disabled.
+-The parameter -Enabled:$false sets the user's account status to disabled, preventing them from accessing resources within the Active Directory environment.
+-This command effectively deactivates the user account for 'wmaximoff' in Active Directory.
+
+
+
