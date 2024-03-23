@@ -257,7 +257,31 @@ $ADUser
 Screenshot: https://imgur.com/SOgBsSv
 
 
+Set User Properties with the Set-ADUser cmdlet
 
+Example 1
+In the terminal:
+Set-ADUser -Identity “wmaximoff” -Email “wanda.maximoff@marvel.org”
+
+Validate in AD for user 'Wanda Maximoff' in the General tab.
+
+PS Screenshot https://imgur.com/vOrnDMg, AD Screenshot https://imgur.com/qxKF4fQ
+
+Set more than one properties.
+
+Example 2
+In the terminal:
+Set-ADUser -Identity “wmaximoff” -Email “wmaximoff@marvel.org” -OfficePhone “800-111-2222”
+
+Validate in AD for user 'Wanda Maximoff' in the General tab.
+
+PS Screenshot https://imgur.com/HLkARQG, AD Screenshot https://imgur.com/H44UDIH
+
+
+Enabled or disabled a user with Set-ADUser.
+
+In the terminal:
+Set-ADUser -Identity “wmaximoff” -Enabled:$false
 
 
 
