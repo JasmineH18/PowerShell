@@ -283,15 +283,26 @@ Enabled or disabled a user with Set-ADUser.
 In the terminal:
 Set-ADUser -Identity “wmaximoff” -Enabled:$false
 
+In AD, if you see a down arrow on the users icon next their name, it means their account is disabled. Double clicked the user name > Account tab > In 'Account options', it should show 'Account is diabled' checked. 
+
+PS Screenshot https://imgur.com/yvshTu4 , AD Screenshots https://imgur.com/XaD71Gr, https://imgur.com/kTSEQRn
+
+Re-enabled the account.
+In the terminal:
+Set-ADUser -Identity “wmaximoff” -Enabled:$true
+
+PS Screenshot https://imgur.com/IHM75m6, AD Screenshot https://imgur.com/ON1xGT4
 
 
+Resetting a password for an AD user
+In the terminal:
+Set-ADAccountPassword -Identity “wmaximoff” -Reset -NewPassword (ConvertTo-SecureString “SnowWhite24!” -AsPlainText -Force)
 
+Set-ADUser -Identity “wmaximoff” -ChangePasswordAtLogon $true
 
+In AD, in the user’s ‘Account’ tab, one of the 'Account options' will show “User must change password at next logon”
 
-
-
-
-
+PS Screenshot https://imgur.com/v6nFZBa, AD Screenshot 
 
 
 
