@@ -145,6 +145,12 @@ Reset a password of a user
 In the PowerShell Terminal: 
 Set-ADAccountPassword -Identity nromanoff -Reset -NewPassword (ConvertTo-SecureString  -AsPlainText "Take*Down+Villians19!" -Force)
 
+- "Set-ADAccountPassword" is used to reset the password for a specified Active Directory account. In this specific command:
+- "-Identity nromanoff" specifies the user account "nromanoff" for which the password will be reset.
+- "-Reset" indicates that the password will be reset.
+- "-NewPassword" specifies the new password that will be set for the user account.
+- "(ConvertTo-SecureString -AsPlainText 'Take*Down+Villians19!' -Force)" is a command that converts the plain text password "Take*Down+Villians19!" into a secure string format that can be used to set the new password securely.
+
 
 To get all enabled (active) users
 In the PowerShell Terminal:
