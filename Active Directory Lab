@@ -305,6 +305,10 @@ In AD, in the user’s ‘Account’ tab, one of the 'Account options' will show
 PS Screenshot https://imgur.com/v6nFZBa, AD Screenshot https://imgur.com/VQVBz5y
 
 
+Unlock an Active Directory account
+In the terminal:
+Unlock-ADAccount -Identity “wmaximoff”
+
 
 
 
