@@ -302,7 +302,7 @@ Set-ADUser -Identity “wmaximoff” -ChangePasswordAtLogon $true
 
 In AD, in the user’s ‘Account’ tab, one of the 'Account options' will show “User must change password at next logon”
 
-PS Screenshot https://imgur.com/v6nFZBa, AD Screenshot 
+PS Screenshot https://imgur.com/v6nFZBa, AD Screenshot https://imgur.com/VQVBz5y
 
 
 
