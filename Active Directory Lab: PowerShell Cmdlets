@@ -114,10 +114,26 @@ Output: It will show the new surname of that user
 - This command will update the surname attribute of the user "nfury" in Active Directory to reflect the new value "Fury".
 
 
+Make a new Active Directory group and add user.
+In the PowerShell Terminal:
+New-ADGroup -Name “Marvel Endgame” -Path “OU=Superheroes, OU=MCU, DC=marvel, DC=org” -GroupScope Global
+
+- "New-ADGroup" is used to create a new Active Directory group. 
+- "-Name" specifies the name of the group, which in this case is "Marvel Endgame".
+- "-Path" specifies the location where the group will be created. The path provided is "OU=Superheroes, OU=MCU, DC=marvel, DC=org".
+- "-GroupScope" defines the scope of the group, which in this case is set to "Global".
+
+This command will create a new Active Directory group named "Marvel Endgame" within the specified organizational units (OU) and domain components (DC) with a global scope.
+
+
 Add a user to a group with Add-ADGroupMember
 In the PowerShell Terminal:
 Add-ADGroupMember -Identity Marvel -Members nfury
 Username will appear in AD group name in the 'Members' tab.
+
+- "Add-ADGroupMember" is used to add a member to a specified Active Directory group.
+- "-Identity 'Marvel'" specifies the Active Directory group "Marvel" to which the member will be added.
+- "-Members 'nfury'" specifies the user account "nfury" that will be added as a member to the "Marvel" group.
 
 
 Remove a user from a group with Remove-ADGroupMember
