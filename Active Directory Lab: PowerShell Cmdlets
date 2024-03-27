@@ -162,13 +162,26 @@ Get-ADUser -filter ‘Enabled -eq $true’
 
 
 Enabled or disabled a user with Set-ADUser.
-In the terminal:
+In the PowerShell terminal:
 Set-ADUser -Identity “wmaximoff” -Enabled:$false
 
 -The Set-ADUser cmdlet in PowerShell is used to modify properties of an Active Directory user.
 -In the command "Set-ADUser -Identity 'wmaximoff' -Enabled:$false", the user with the username 'wmaximoff' will have their account disabled.
 -The parameter -Enabled:$false sets the user's account status to disabled, preventing them from accessing resources within the Active Directory environment.
 -This command effectively deactivates the user account for 'wmaximoff' in Active Directory.
+
+
+Unlock an Active Directory account
+In the PowerShell terminal:
+Unlock-ADAccount -Identity “wmaximoff”
+
+- "Unlock-ADAccount" is used to unlock a specified Active Directory user account that has been locked out due to multiple failed login attempts.
+- "-Identity 'wmaximoff'" specifies the user account "wmaximoff" that needs to be unlocked.
+
+
+
+
+
 
 
 
