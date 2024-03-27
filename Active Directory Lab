@@ -310,8 +310,13 @@ In the terminal:
 Unlock-ADAccount -Identity “wmaximoff”
 
 
+Make a new Active Directory group and add user.
+In the terminal:
+New-ADGroup -Name “Marvel Endgame” -Path “OU=Superheroes, OU=MCU, DC=marvel, DC=org” -GroupScope Global
 
+In AD, In ‘Superheroes’, the ‘Marvel Endgame’ group should appear.
 
+PS Screenshot https://imgur.com/QWO7aHB, AD screenshot https://imgur.com/07Lkbfw
 
 
 
