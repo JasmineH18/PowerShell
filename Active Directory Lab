@@ -319,8 +319,13 @@ In AD, In ‘Superheroes’, the ‘Marvel Endgame’ group should appear.
 PS Screenshot https://imgur.com/QWO7aHB, AD screenshot https://imgur.com/07Lkbfw
 
 
+Add user to the group.
+In the terminal:
+Add-ADGroupMember -Identity “Marvel Endgame” -Members “wmaximoff”
 
+In AD, The user ‘wmaximoff’, in the ‘Member of’ tab will show the user is part of ‘Marvel Endgame’ group 
 
+PS Screenshot https://imgur.com/8zq8Nlq, AD screenshot https://imgur.com/kA1vIae
 
 
 
