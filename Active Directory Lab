@@ -328,6 +328,16 @@ In AD, The user ‘wmaximoff’, in the ‘Member of’ tab will show the user i
 PS Screenshot https://imgur.com/8zq8Nlq, AD screenshot https://imgur.com/kA1vIae
 
 
+View the group information in PowerShell
+In the terminal:
+$Group = Get-ADGroup -Identity "Marvel Endgame" 
+$Group
+
+PS Screenshot: https://imgur.com/sE8kq3M
+
+
+
+
 
 
 
