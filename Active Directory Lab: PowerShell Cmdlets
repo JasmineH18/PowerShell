@@ -142,6 +142,12 @@ Remove-ADGroupMember -Identity Marvel -Members nfurry
 Confirm [Y] Yes
 Username will not appear in AD group name in the 'Members' tab.
 
+- "Remove-ADGroupMember" is used to remove a member from an Active Directory group.
+- The parameter "-Identity Marvel" specifies the group from which the member will be removed, in this case, the group named "Marvel".
+- The parameter "-Members nfurry" specifies the member to be removed, with the username "nfurry".
+
+By executing this command, the user "nfurry" will be removed from the group "Marvel" in the Active Directory environment.
+
 
 Turn on advanced features in Active Directory Users & Computers
 In the Active Directory:
@@ -155,6 +161,16 @@ In the PowerShell Terminal:
 New-ADUser -Name "Natasha Romanoff" -GivenName "Natasha" -Surname "Romanoff" -SamAccountName "nromanoff" -UserPrincipalName "nromanoff@marvelhq.org" -Path "OU=Administration,OU=Staff,OU=MarvelHQ,DC=marvelhq,DC=org" -AccountPassword(ConvertTo-SecureString "Family4Forever21!" -AsPlainText -force) -Enabled $true
 
 You would see the created user in AD.
+
+- "New-ADUser" is used to create a new user in Active Directory.
+- The parameter "-Name 'Natasha Romanoff'" specifies the full name of the user as "Natasha Romanoff".
+- The parameter "-GivenName 'Natasha'" specifies the first name of the user as "Natasha".
+- The parameter "-Surname 'Romanoff'" specifies the last name of the user as "Romanoff".
+- The parameter "-SamAccountName 'nromanoff'" specifies the SamAccountName for the user as "nromanoff".
+- The parameter "-UserPrincipalName 'nromanoff@marvelhq.org'" specifies the User Principal Name (UPN) for the user as "nromanoff@marvelhq.org".
+- The parameter "-Path 'OU=Administration,OU=Staff,OU=MarvelHQ,DC=marvelhq,DC=org'" specifies the Organizational Unit (OU) where the user will be created.
+- The parameter "-AccountPassword (ConvertTo-SecureString 'Family4Forever21!' -AsPlainText -Force)" sets the password for the user as "Family4Forever21!".
+- The parameter "-Enabled $true" specifies that the user account will be enabled after creation.
 
 
 Reset a password of a user
